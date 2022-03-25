@@ -1,0 +1,294 @@
+@import "./utils/variable";
+
+body {
+  margin: 0;
+  cursor: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+#particles-js {
+  position: absolute;
+  height: 100vh;
+  width: auto;
+}
+
+#particles-js2 {
+  position: absolute;
+  padding-top: 100px;
+  height: 227.5vh;
+  width: auto;
+}
+
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)),
+    url(/Pictures/Background.jpg) no-repeat center;
+  height: 455vh;
+  background-size: cover;
+  header {
+    height: 113.75vh;
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 40px;
+      @include mobile {
+        justify-content: space-between;
+        padding-right: 0;
+      }
+      li {
+        position: relative;
+        a {
+          color: white;
+          font-size: 1.5em;
+          margin: 0 15px;
+          padding-top: 30px;
+          @include mobile {
+            margin: 0;
+            padding-top: 15px;
+          }
+          &:hover {
+            color: $nav-color;
+          }
+          &:focus {
+            color: $nav-color;
+          }
+        }
+      }
+    }
+    h1 {
+      font-size: 5em;
+      line-height: 1.6em;
+      margin-top: 250px;
+      animation: Title 1.5s ease-out forwards;
+      @include mobile {
+        margin-top: 150px;
+        font-size: 4em;
+      }
+      span {
+        background: linear-gradient(45deg, #ff0062, #eb40bd, #00e1ff, #46e7c5);
+        background-size: 400% 400%;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: gradient 10s ease infinite;
+      }
+    }
+  }
+
+  section {
+    .about {
+      height: 113.75vh;
+      h2 {
+        font-size: 4em;
+        padding-top: 50px;
+        @include mobile {
+          padding-top: 30px;
+          font-size: 3.5em;
+        }
+      }
+      .profilPicture {
+        margin-top: 70px;
+        background-color: rgba($color: #f2f2f2, $alpha: 0.4);
+        border-radius: 15px;
+        @include mobile {
+          margin-top: 40px;
+        }
+        p {
+          font-size: 1.5em;
+          color: #222;
+          text-align: justify;
+          font-weight: 600;
+          @include tablet {
+            font-size: 1.3em;
+          }
+          @include mobile {
+            font-size: 1.2em;
+          }
+        }
+      }
+      .workingLearning {
+        margin-top: 120px;
+        background-color: rgba($color: #f2f2f2, $alpha: 0.4);
+        border-radius: 15px;
+        @include tablet {
+          margin-top: 80px;
+        }
+        @include mobile {
+          margin-top: 20px;
+        }
+        div:first-child {
+          @include mobile {
+            padding-bottom: 20px;
+          }
+        }
+        h3 {
+          font-size: 1.7em;
+          font-weight: 600;
+          @include tablet {
+            font-size: 1.5em;
+            font-weight: 500;
+          }
+        }
+        div {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: flex-start;
+          span {
+            font-size: 3em;
+            padding: 0 10px;
+            color: #222;
+            @include mobile {
+              font-size: 2.5em;
+            }
+            p {
+              font-size: 0.4em;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+    .project {
+      height: 113.75vh;
+      h2 {
+        font-size: 4em;
+        padding-top: 100px;
+        @include tablet {
+          padding-top: 180px;
+        }
+        @include mobile {
+          padding-top: 80px;
+          font-size: 3.5em;
+        }
+      }
+      .containerModal {
+        .rowModal {
+          margin-top: 50px;
+          @include mobile {
+            margin-top: 20px;
+          }
+          .cardModal {
+            cursor: pointer;
+            height: auto;
+            padding: 0;
+            border: none;
+            margin: 10px 10px;
+            border-radius: 30px;
+            box-shadow: 5px 5px 15px #222;
+            transition: opacity 0.3s ease-in-out;
+            @include tablet {
+              max-width: 350px;
+              margin: 10px auto;
+            }
+            @include mobile {
+              margin: 10px auto;
+              width: auto;
+            }
+            &:hover {
+              opacity: 0.7;
+            }
+            .imgThumb {
+              object-fit: cover;
+              width: auto;
+              height: 100%;
+              border-radius: 30px;
+            }
+            .imgProject {
+              position: absolute;
+              color: white;
+              bottom: 0px;
+              left: 5px;
+              padding: 15px;
+              border-radius: 30px;
+              background-color: rgba($color: #222, $alpha: 0.9);
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    height: 113.75vh;
+    h2 {
+      font-size: 4em;
+      padding-top: 200px;
+      @include tablet {
+        padding-top: 250px;
+      }
+      @include mobile {
+        font-size: 3.5em;
+        padding-top: 200px;
+      }
+    }
+    div {
+      form {
+        max-width: 70%;
+        padding-top: 50px;
+        margin: 0 auto;
+        @include tablet {
+          padding-top: 0;
+        }
+        @include mobile {
+          max-width: 90%;
+        }
+        .inputForm {
+          margin: 40px 0;
+          input {
+            background-color: #222;
+            color: white;
+            border: none;
+          }
+          textarea {
+            background-color: #222;
+            color: white;
+            border: none;
+          }
+          label {
+            color: white;
+          }
+        }
+        .submit {
+          position: relative;
+          margin-bottom: 40px;
+          button {
+            background-color: #222;
+            color: white;
+            font-size: 1.3em;
+            &:hover {
+              background-color: rgba($color: $nav-color, $alpha: 0.5);
+            }
+          }
+        }
+      }
+      .contactMail {
+        position: relative;
+        font-size: 1.2em;
+        a {
+          color: white;
+          transition: color 0.3s ease-in-out;
+          &:hover {
+            color: $nav-color;
+          }
+        }
+      }
+      .social {
+        margin-top: 30px;
+        p {
+          font-size: 1.3em;
+        }
+        a {
+          position: relative;
+          span {
+            color: white;
+            font-size: 3em;
+            padding: 0 20px;
+            transition: color 0.3s ease;
+            &:hover {
+              color: #222;
+            }
+          }
+        }
+      }
+    }
+  }
+}

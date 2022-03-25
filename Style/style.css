@@ -1,0 +1,451 @@
+@-webkit-keyframes Title {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes Title {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  margin: 0;
+  cursor: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+#particles-js {
+  position: absolute;
+  height: 100vh;
+  width: auto;
+}
+
+#particles-js2 {
+  position: absolute;
+  padding-top: 100px;
+  height: 227.5vh;
+  width: auto;
+}
+
+.background {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0.2))), url(/Pictures/Background.jpg) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url(/Pictures/Background.jpg) no-repeat center;
+  height: 455vh;
+  background-size: cover;
+}
+
+.background header {
+  height: 113.75vh;
+}
+
+.background header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 40px;
+}
+
+@media all and (max-width: 576px) {
+  .background header ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 0;
+  }
+}
+
+.background header ul li {
+  position: relative;
+}
+
+.background header ul li a {
+  color: white;
+  font-size: 1.5em;
+  margin: 0 15px;
+  padding-top: 30px;
+}
+
+@media all and (max-width: 576px) {
+  .background header ul li a {
+    margin: 0;
+    padding-top: 15px;
+  }
+}
+
+.background header ul li a:hover {
+  color: #46e7c5;
+}
+
+.background header ul li a:focus {
+  color: #46e7c5;
+}
+
+.background header h1 {
+  font-size: 5em;
+  line-height: 1.6em;
+  margin-top: 250px;
+  -webkit-animation: Title 1.5s ease-out forwards;
+          animation: Title 1.5s ease-out forwards;
+}
+
+@media all and (max-width: 576px) {
+  .background header h1 {
+    margin-top: 150px;
+    font-size: 4em;
+  }
+}
+
+.background header h1 span {
+  background: linear-gradient(45deg, #ff0062, #eb40bd, #00e1ff, #46e7c5);
+  background-size: 400% 400%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: gradient 10s ease infinite;
+          animation: gradient 10s ease infinite;
+}
+
+.background section .about {
+  height: 113.75vh;
+}
+
+.background section .about h2 {
+  font-size: 4em;
+  padding-top: 50px;
+}
+
+@media all and (max-width: 576px) {
+  .background section .about h2 {
+    padding-top: 30px;
+    font-size: 3.5em;
+  }
+}
+
+.background section .about .profilPicture {
+  margin-top: 70px;
+  background-color: rgba(242, 242, 242, 0.4);
+  border-radius: 15px;
+}
+
+@media all and (max-width: 576px) {
+  .background section .about .profilPicture {
+    margin-top: 40px;
+  }
+}
+
+.background section .about .profilPicture p {
+  font-size: 1.5em;
+  color: #222;
+  text-align: justify;
+  font-weight: 600;
+}
+
+@media all and (max-width: 767px) {
+  .background section .about .profilPicture p {
+    font-size: 1.3em;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .background section .about .profilPicture p {
+    font-size: 1.2em;
+  }
+}
+
+.background section .about .workingLearning {
+  margin-top: 120px;
+  background-color: rgba(242, 242, 242, 0.4);
+  border-radius: 15px;
+}
+
+@media all and (max-width: 767px) {
+  .background section .about .workingLearning {
+    margin-top: 80px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .background section .about .workingLearning {
+    margin-top: 20px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .background section .about .workingLearning div:first-child {
+    padding-bottom: 20px;
+  }
+}
+
+.background section .about .workingLearning h3 {
+  font-size: 1.7em;
+  font-weight: 600;
+}
+
+@media all and (max-width: 767px) {
+  .background section .about .workingLearning h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+}
+
+.background section .about .workingLearning div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.background section .about .workingLearning div span {
+  font-size: 3em;
+  padding: 0 10px;
+  color: #222;
+}
+
+@media all and (max-width: 576px) {
+  .background section .about .workingLearning div span {
+    font-size: 2.5em;
+  }
+}
+
+.background section .about .workingLearning div span p {
+  font-size: 0.4em;
+  font-weight: 400;
+}
+
+.background section .project {
+  height: 113.75vh;
+}
+
+.background section .project h2 {
+  font-size: 4em;
+  padding-top: 100px;
+}
+
+@media all and (max-width: 767px) {
+  .background section .project h2 {
+    padding-top: 180px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .background section .project h2 {
+    padding-top: 80px;
+    font-size: 3.5em;
+  }
+}
+
+.background section .project .containerModal .rowModal {
+  margin-top: 50px;
+}
+
+@media all and (max-width: 576px) {
+  .background section .project .containerModal .rowModal {
+    margin-top: 20px;
+  }
+}
+
+.background section .project .containerModal .rowModal .cardModal {
+  cursor: pointer;
+  height: auto;
+  padding: 0;
+  border: none;
+  margin: 10px 10px;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 15px #222;
+          box-shadow: 5px 5px 15px #222;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@media all and (max-width: 767px) {
+  .background section .project .containerModal .rowModal .cardModal {
+    max-width: 350px;
+    margin: 10px auto;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .background section .project .containerModal .rowModal .cardModal {
+    margin: 10px auto;
+    width: auto;
+  }
+}
+
+.background section .project .containerModal .rowModal .cardModal:hover {
+  opacity: 0.7;
+}
+
+.background section .project .containerModal .rowModal .cardModal .imgThumb {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.background section .project .containerModal .rowModal .cardModal .imgProject {
+  position: absolute;
+  color: white;
+  bottom: 0px;
+  left: 5px;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: rgba(34, 34, 34, 0.9);
+}
+
+.background footer {
+  height: 113.75vh;
+}
+
+.background footer h2 {
+  font-size: 4em;
+  padding-top: 200px;
+}
+
+@media all and (max-width: 767px) {
+  .background footer h2 {
+    padding-top: 250px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .background footer h2 {
+    font-size: 3.5em;
+    padding-top: 200px;
+  }
+}
+
+.background footer div form {
+  max-width: 70%;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 767px) {
+  .background footer div form {
+    padding-top: 0;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .background footer div form {
+    max-width: 90%;
+  }
+}
+
+.background footer div form .inputForm {
+  margin: 40px 0;
+}
+
+.background footer div form .inputForm input {
+  background-color: #222;
+  color: white;
+  border: none;
+}
+
+.background footer div form .inputForm textarea {
+  background-color: #222;
+  color: white;
+  border: none;
+}
+
+.background footer div form .inputForm label {
+  color: white;
+}
+
+.background footer div form .submit {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.background footer div form .submit button {
+  background-color: #222;
+  color: white;
+  font-size: 1.3em;
+}
+
+.background footer div form .submit button:hover {
+  background-color: rgba(70, 231, 197, 0.5);
+}
+
+.background footer div .contactMail {
+  position: relative;
+  font-size: 1.2em;
+}
+
+.background footer div .contactMail a {
+  color: white;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.background footer div .contactMail a:hover {
+  color: #46e7c5;
+}
+
+.background footer div .social {
+  margin-top: 30px;
+}
+
+.background footer div .social p {
+  font-size: 1.3em;
+}
+
+.background footer div .social a {
+  position: relative;
+}
+
+.background footer div .social a span {
+  color: white;
+  font-size: 3em;
+  padding: 0 20px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.background footer div .social a span:hover {
+  color: #222;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,42 @@
+$primary-color: #fff;
+$nav-color: #46e7c5;
+
+@mixin ordi {
+  @media all and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media all and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media all and (max-width: 576px) {
+    @content;
+  }
+}
+
+@keyframes Title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
