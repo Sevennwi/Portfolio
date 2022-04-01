@@ -39,12 +39,13 @@ body {
         position: relative;
         a {
           color: white;
-          font-size: 1.5em;
+          font-size: 1.7em;
           margin: 0 15px;
           padding-top: 30px;
           @include mobile {
             margin: 0;
             padding-top: 15px;
+            font-size: 1.5em;
           }
           &:hover {
             color: $nav-color;
@@ -57,8 +58,9 @@ body {
     }
     h1 {
       font-size: 5em;
+      max-width: 900px;
       line-height: 1.6em;
-      margin-top: 250px;
+      margin: 250px auto 0;
       animation: Title 1.5s ease-out forwards;
       @include mobile {
         margin-top: 150px;
@@ -69,6 +71,7 @@ body {
         background-size: 400% 400%;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
+        background-clip: text;
         animation: gradient 10s ease infinite;
       }
     }
@@ -87,7 +90,7 @@ body {
       }
       .profilPicture {
         margin-top: 70px;
-        background-color: rgba($color: #f2f2f2, $alpha: 0.4);
+        background-color: rgba($color: #f2f2f2, $alpha: 0.5);
         border-radius: 15px;
         @include mobile {
           margin-top: 40px;
@@ -106,8 +109,8 @@ body {
         }
       }
       .workingLearning {
-        margin-top: 120px;
-        background-color: rgba($color: #f2f2f2, $alpha: 0.4);
+        margin-top: 80px;
+        background-color: rgba($color: #f2f2f2, $alpha: 0.5);
         border-radius: 15px;
         @include tablet {
           margin-top: 80px;
@@ -140,8 +143,11 @@ body {
             @include mobile {
               font-size: 2.5em;
             }
+            @include mobileSmall {
+              font-size: 2.2em;
+            }
             p {
-              font-size: 0.4em;
+              font-size: 0.45em;
               font-weight: 400;
             }
           }
@@ -152,13 +158,16 @@ body {
       height: 113.75vh;
       h2 {
         font-size: 4em;
-        padding-top: 100px;
+        padding-top: 150px;
         @include tablet {
-          padding-top: 180px;
+          padding-top: 210px;
         }
         @include mobile {
-          padding-top: 80px;
+          padding-top: 180px;
           font-size: 3.5em;
+        }
+        @include mobileSmall {
+          padding-top: 200px;
         }
       }
       .containerModal {
@@ -188,12 +197,18 @@ body {
               opacity: 0.7;
             }
             .imgThumb {
-              object-fit: cover;
+              object-fit: contain;
               width: auto;
               height: 100%;
               border-radius: 30px;
             }
-            .imgProject {
+            .imgThumbCover {
+              object-fit: cover;
+              @include tablet {
+                object-fit: contain;
+              }
+            }
+            .titleProject {
               position: absolute;
               color: white;
               bottom: 0px;
@@ -201,6 +216,30 @@ body {
               padding: 15px;
               border-radius: 30px;
               background-color: rgba($color: #222, $alpha: 0.9);
+            }
+          }
+        }
+        .modal-content {
+          background-color: #222;
+          .modal-body {
+            img {
+              border-radius: 5px;
+            }
+            p {
+              color: white;
+              font-size: 1.1em;
+              padding: 20px 5px 10px;
+              width: 80%;
+              margin: 0 auto;
+              @include tablet {
+                width: 100%;
+              }
+            }
+          }
+          .modal-footer {
+            button,
+            a {
+              font-size: 1.1em;
             }
           }
         }
@@ -265,7 +304,7 @@ body {
         font-size: 1.2em;
         a {
           color: white;
-          transition: color 0.3s ease-in-out;
+          transition: color 0.2s ease-in-out;
           &:hover {
             color: $nav-color;
           }
@@ -282,7 +321,7 @@ body {
             color: white;
             font-size: 3em;
             padding: 0 20px;
-            transition: color 0.3s ease;
+            transition: color 0.2s ease;
             &:hover {
               color: #222;
             }

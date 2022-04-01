@@ -18,6 +18,11 @@ $nav-color: #46e7c5;
     @content;
   }
 }
+@mixin mobileSmall {
+  @media all and (max-width: 400px) {
+    @content;
+  }
+}
 
 @keyframes Title {
   from {
