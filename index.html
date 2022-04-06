@@ -653,13 +653,14 @@
       <footer class="container-fluid">
         <h2 class="text-center text-white">Contact Me !</h2>
         <div class="container">
-          <form action="#">
+          <form action="/php/contact.php">
             <div class="form-floating inputForm">
               <input
                 type="text"
                 class="form-control"
                 id="floatingName"
                 placeholder="Francis"
+                name="sender"
               />
               <label for="floatingName">Name</label>
             </div>
@@ -668,7 +669,8 @@
                 type="email"
                 class="form-control"
                 id="floatingMail"
-                placeholder="Password"
+                placeholder="Email"
+                name="senderEmail"
               />
               <label for="floatingMail">Email</label>
             </div>
@@ -678,11 +680,12 @@
                 placeholder="Leave a comment here"
                 id="floatingTextarea2"
                 style="height: 100px"
+                name="message"
               ></textarea>
               <label for="floatingTextarea2">Comments</label>
             </div>
             <div class="text-center submit">
-              <button class="btn" type="submit">Submit</button>
+              <button class="btn" type="submit" name="submit">Submit</button>
             </div>
           </form>
           <p class="text-center text-white contactMail">
