@@ -20,6 +20,15 @@ body {
   width: auto;
 }
 
+/* Animation globale */
+
+.slideIn {
+  opacity: 0;
+}
+.slideIn-transition {
+  animation: slideInTop 0.8s ease-in-out forwards;
+}
+
 .background {
   background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)),
     url(/Pictures/Background.jpg) no-repeat center;
@@ -329,5 +338,15 @@ body {
         }
       }
     }
+  }
+
+  /* Change the white to any color */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #222 inset !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s;
   }
 }
