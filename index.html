@@ -653,14 +653,15 @@
       <footer class="container-fluid">
         <h2 class="text-center text-white">Contact Me !</h2>
         <div class="container">
-          <form name="contact" method="POST" data-netlify="true">
+          <form action="https://formsubmit.co/killianbrunet.pro@gmail.com" method="POST">
             <div class="form-floating inputForm">
               <input
                 type="text"
                 class="form-control"
                 id="floatingName"
                 placeholder="Francis"
-                name="sender"
+                name="name"
+                required
               />
               <label for="floatingName">Name</label>
             </div>
@@ -671,6 +672,7 @@
                 id="floatingMail"
                 placeholder="Email"
                 name="email"
+                required
               />
               <label for="floatingMail">Email</label>
             </div>
