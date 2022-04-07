@@ -106,7 +106,7 @@ body {
 
 @media all and (max-width: 576px) {
   .background {
-    min-height: 550vh;
+    height: calc(var(--vh, 1vh) * 560);
   }
 }
 
@@ -124,6 +124,14 @@ body {
   padding-right: 40px;
 }
 
+@media all and (max-width: 767px) {
+  .background header ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media all and (max-width: 576px) {
   .background header ul {
     -webkit-box-pack: justify;
@@ -133,7 +141,7 @@ body {
   }
 }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 400px) {
   .background header ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

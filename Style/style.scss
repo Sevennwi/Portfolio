@@ -35,7 +35,7 @@ body {
   height: 455vh;
   background-size: cover;
   @include mobile {
-    min-height: 550vh;
+    height: calc(var(--vh, 1vh) * 560);
   }
   header {
     height: 113.75vh;
@@ -43,11 +43,14 @@ body {
       display: flex;
       justify-content: flex-end;
       padding-right: 40px;
+      @include tablet {
+        justify-content: center;
+      }
       @include mobile {
         justify-content: space-between;
         padding-right: 0;
       }
-      @include mobileSmall {
+      @include mobileMedium {
         flex-direction: column;
       }
       li {
