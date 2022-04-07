@@ -34,6 +34,9 @@ body {
     url(/Pictures/Background.jpg) no-repeat center;
   height: 455vh;
   background-size: cover;
+  @include mobile {
+    min-height: 550vh;
+  }
   header {
     height: 113.75vh;
     ul {
@@ -77,6 +80,9 @@ body {
       @include mobile {
         margin-top: 150px;
         font-size: 3.5em;
+      }
+      @include mobileSmall {
+        margin-top: 50px;
       }
       span {
         background: linear-gradient(45deg, #ff0062, #eb40bd, #00e1ff, #46e7c5);
@@ -176,14 +182,8 @@ body {
           padding-top: 210px;
         }
         @include mobile {
-          padding-top: 180px;
+          padding-top: 500px;
           font-size: 3em;
-        }
-        @include mobileMedium {
-          padding-top: 250px;
-        }
-        @include mobileSmall {
-          padding-top: 300px;
         }
       }
       .containerModal {
@@ -271,7 +271,7 @@ body {
       }
       @include mobile {
         font-size: 3em;
-        padding-top: 200px;
+        padding-top: 700px;
       }
     }
     div {
@@ -327,9 +327,9 @@ body {
       }
       .social {
         margin-top: 30px;
-        @include mobileSmall{
+        @include mobileSmall {
           margin-top: 10px;
-        } 
+        }
         p {
           font-size: 1.3em;
         }
