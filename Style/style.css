@@ -92,13 +92,6 @@ body {
   width: auto;
 }
 
-@media all and (max-width: 576px) {
-  #particles-js2 {
-    padding-top: 400px;
-    height: 290vh;
-  }
-}
-
 /* Animation globale */
 .slideIn {
   opacity: 0;
@@ -263,7 +256,7 @@ body {
 
 @media all and (max-width: 576px) {
   .background section .about .profilPicture p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: 500;
   }
 }
@@ -358,7 +351,7 @@ body {
 
 @media all and (max-width: 576px) {
   .background section .project h2 {
-    padding-top: 500px;
+    padding-top: 200px;
     font-size: 3em;
   }
 }
@@ -478,7 +471,7 @@ body {
 @media all and (max-width: 576px) {
   .background footer h2 {
     font-size: 3em;
-    padding-top: 700px;
+    padding-top: 200px;
   }
 }
 
@@ -491,12 +484,6 @@ body {
 @media all and (max-width: 767px) {
   .background footer div form {
     padding-top: 0;
-  }
-}
-
-@media all and (max-width: 576px) {
-  .background footer div form {
-    display: none;
   }
 }
 
@@ -548,20 +535,12 @@ body {
 
 @media all and (max-width: 576px) {
   .background footer div .contactMail {
-    margin-top: 70px;
-    font-size: 1.6em;
-  }
-}
-
-@media all and (max-width: 576px) {
-  .background footer div .contactMail .Or {
-    display: none;
+    font-size: 1.3em;
   }
 }
 
 .background footer div .contactMail a {
   color: white;
-  overflow-wrap: break-word;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
@@ -596,7 +575,7 @@ body {
 
 @media all and (max-width: 576px) {
   .background footer div .social p {
-    font-size: 1.6em;
+    font-size: 1.3em;
   }
 }
 
@@ -624,7 +603,7 @@ body {
 
 @media all and (max-width: 576px) {
   .background footer div .social a span {
-    font-size: 4em;
+    font-size: 3.5em;
   }
 }
 

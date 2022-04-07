@@ -21,10 +21,6 @@ body {
   padding-top: 100px;
   height: 2160px;
   width: auto;
-  @include mobile {
-    padding-top: 400px;
-    height: 290vh;
-  }
 }
 
 /* Animation globale */
@@ -133,7 +129,7 @@ body {
             font-size: 1.3em;
           }
           @include mobile {
-            font-size: 1.1em;
+            font-size: 1.2em;
             font-weight: 500;
           }
         }
@@ -193,7 +189,7 @@ body {
           padding-top: 210px;
         }
         @include mobile {
-          padding-top: 500px;
+          padding-top: 200px;
           font-size: 3em;
         }
       }
@@ -282,7 +278,7 @@ body {
       }
       @include mobile {
         font-size: 3em;
-        padding-top: 700px;
+        padding-top: 200px;
       }
     }
     div {
@@ -292,9 +288,6 @@ body {
         margin: 0 auto;
         @include tablet {
           padding-top: 0;
-        }
-        @include mobile {
-          display: none;
         }
         .inputForm {
           margin: 40px 0;
@@ -332,17 +325,10 @@ body {
           font-size: 1.2em;
         }
         @include mobile {
-          margin-top: 70px;
-          font-size: 1.6em;
-        }
-        .Or {
-          @include mobile {
-            display: none;
-          }
+          font-size: 1.3em;
         }
         a {
           color: white;
-          overflow-wrap: break-word;
           transition: color 0.2s ease-in-out;
           &:hover {
             color: $nav-color;
@@ -363,7 +349,7 @@ body {
             font-size: 1.2em;
           }
           @include mobile {
-            font-size: 1.6em;
+            font-size: 1.3em;
           }
         }
         a {
@@ -380,7 +366,7 @@ body {
               font-size: 3em;
             }
             @include mobile {
-              font-size: 4em;
+              font-size: 3.5em;
             }
           }
         }
