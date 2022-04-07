@@ -18,8 +18,15 @@ $nav-color: #46e7c5;
     @content;
   }
 }
-@mixin mobileSmall {
+
+@mixin mobileMedium {
   @media all and (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin mobileSmall {
+  @media all and (max-width: 350px) {
     @content;
   }
 }

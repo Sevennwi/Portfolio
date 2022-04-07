@@ -44,6 +44,9 @@ body {
         justify-content: space-between;
         padding-right: 0;
       }
+      @include mobileSmall {
+        flex-direction: column;
+      }
       li {
         position: relative;
         a {
@@ -70,10 +73,10 @@ body {
       max-width: 900px;
       line-height: 1.6em;
       margin: 250px auto 0;
-      animation: Title 1.5s ease-out forwards;
+      animation: Title 1.5s ease-in forwards;
       @include mobile {
         margin-top: 150px;
-        font-size: 4em;
+        font-size: 3.5em;
       }
       span {
         background: linear-gradient(45deg, #ff0062, #eb40bd, #00e1ff, #46e7c5);
@@ -94,7 +97,7 @@ body {
         padding-top: 50px;
         @include mobile {
           padding-top: 30px;
-          font-size: 3.5em;
+          font-size: 3em;
         }
       }
       .profilPicture {
@@ -113,7 +116,8 @@ body {
             font-size: 1.3em;
           }
           @include mobile {
-            font-size: 1.2em;
+            font-size: 1.1em;
+            font-weight: 500;
           }
         }
       }
@@ -173,10 +177,13 @@ body {
         }
         @include mobile {
           padding-top: 180px;
-          font-size: 3.5em;
+          font-size: 3em;
+        }
+        @include mobileMedium {
+          padding-top: 250px;
         }
         @include mobileSmall {
-          padding-top: 200px;
+          padding-top: 300px;
         }
       }
       .containerModal {
@@ -200,7 +207,6 @@ body {
             }
             @include mobile {
               margin: 10px auto;
-              width: auto;
             }
             &:hover {
               opacity: 0.7;
@@ -264,7 +270,7 @@ body {
         padding-top: 250px;
       }
       @include mobile {
-        font-size: 3.5em;
+        font-size: 3em;
         padding-top: 200px;
       }
     }
@@ -321,6 +327,9 @@ body {
       }
       .social {
         margin-top: 30px;
+        @include mobileSmall{
+          margin-top: 10px;
+        } 
         p {
           font-size: 1.3em;
         }

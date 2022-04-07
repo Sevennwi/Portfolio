@@ -127,6 +127,15 @@ body {
   }
 }
 
+@media all and (max-width: 350px) {
+  .background header ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .background header ul li {
   position: relative;
 }
@@ -159,14 +168,14 @@ body {
   max-width: 900px;
   line-height: 1.6em;
   margin: 250px auto 0;
-  -webkit-animation: Title 1.5s ease-out forwards;
-          animation: Title 1.5s ease-out forwards;
+  -webkit-animation: Title 1.5s ease-in forwards;
+          animation: Title 1.5s ease-in forwards;
 }
 
 @media all and (max-width: 576px) {
   .background header h1 {
     margin-top: 150px;
-    font-size: 4em;
+    font-size: 3.5em;
   }
 }
 
@@ -192,7 +201,7 @@ body {
 @media all and (max-width: 576px) {
   .background section .about h2 {
     padding-top: 30px;
-    font-size: 3.5em;
+    font-size: 3em;
   }
 }
 
@@ -223,7 +232,8 @@ body {
 
 @media all and (max-width: 576px) {
   .background section .about .profilPicture p {
-    font-size: 1.2em;
+    font-size: 1.1em;
+    font-weight: 500;
   }
 }
 
@@ -289,7 +299,7 @@ body {
   }
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 350px) {
   .background section .about .workingLearning div span {
     font-size: 2.2em;
   }
@@ -318,13 +328,19 @@ body {
 @media all and (max-width: 576px) {
   .background section .project h2 {
     padding-top: 180px;
-    font-size: 3.5em;
+    font-size: 3em;
   }
 }
 
 @media all and (max-width: 400px) {
   .background section .project h2 {
-    padding-top: 200px;
+    padding-top: 250px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .background section .project h2 {
+    padding-top: 300px;
   }
 }
 
@@ -361,7 +377,6 @@ body {
 @media all and (max-width: 576px) {
   .background section .project .containerModal .rowModal .cardModal {
     margin: 10px auto;
-    width: auto;
   }
 }
 
@@ -443,7 +458,7 @@ body {
 
 @media all and (max-width: 576px) {
   .background footer h2 {
-    font-size: 3.5em;
+    font-size: 3em;
     padding-top: 200px;
   }
 }
@@ -518,6 +533,12 @@ body {
 
 .background footer div .social {
   margin-top: 30px;
+}
+
+@media all and (max-width: 350px) {
+  .background footer div .social {
+    margin-top: 10px;
+  }
 }
 
 .background footer div .social p {
