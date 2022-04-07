@@ -11,6 +11,9 @@ body {
   position: absolute;
   height: 100vh;
   width: auto;
+  @include mobile {
+    height: 120vh;
+  }
 }
 
 #particles-js2 {
@@ -18,6 +21,10 @@ body {
   padding-top: 100px;
   height: 227.5vh;
   width: auto;
+  @include mobile {
+    padding-top: 400px;
+    height: 290vh;
+  }
 }
 
 /* Animation globale */
@@ -32,12 +39,12 @@ body {
 .background {
   background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)),
     url(/Pictures/Background.jpg) no-repeat center;
-  height: 455vh;
+  min-height: 4320px;
   background-size: cover;
   position: relative;
-  @include mobile {
-    min-height: 560vh;
-  }
+/*   @include mobile {
+    min-height: 520vh;
+  } */
   header {
     height: 113.75vh;
     ul {
@@ -64,7 +71,7 @@ body {
           @include mobile {
             margin: 0;
             padding-top: 15px;
-            font-size: 1.5em;
+            font-size: 1.4em;
           }
           &:hover {
             color: $nav-color;
@@ -85,7 +92,7 @@ body {
         margin-top: 150px;
         font-size: 3.5em;
       }
-      @include mobileSmall {
+      @include mobileMedium {
         margin-top: 50px;
       }
       span {
@@ -269,7 +276,7 @@ body {
     height: 113.75vh;
     h2 {
       font-size: 4em;
-      padding-top: 200px;
+      padding-top: 100px;
       @include tablet {
         padding-top: 250px;
       }
@@ -320,9 +327,12 @@ body {
       }
       .contactMail {
         position: relative;
-        font-size: 1.2em;
+        font-size: 1.5em;
+        @include tablet {
+          font-size: 1.2em;
+        }
         @include mobile {
-          margin-top: 100px;
+          margin-top: 70px;
           font-size: 1.6em;
         }
         .Or {
@@ -348,7 +358,10 @@ body {
       .social {
         margin-top: 30px;
         p {
-          font-size: 1.3em;
+          font-size: 1.5em;
+          @include tablet {
+            font-size: 1.2em;
+          }
           @include mobile {
             font-size: 1.6em;
           }
@@ -357,11 +370,14 @@ body {
           position: relative;
           span {
             color: white;
-            font-size: 3em;
+            font-size: 3.5em;
             padding: 0 20px;
             transition: color 0.2s ease;
             &:hover {
               color: #222;
+            }
+            @include tablet {
+              font-size: 3em;
             }
             @include mobile {
               font-size: 4em;
