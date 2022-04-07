@@ -101,12 +101,13 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url(/Pictures/Background.jpg) no-repeat center;
   height: 455vh;
   background-size: cover;
+  position: relative;
   /* Change the white to any color */
 }
 
 @media all and (max-width: 576px) {
   .background {
-    height: calc(var(--vh, 1vh) * 560);
+    min-height: 560vh;
   }
 }
 

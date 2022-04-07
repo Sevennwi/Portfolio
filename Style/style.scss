@@ -34,8 +34,10 @@ body {
     url(/Pictures/Background.jpg) no-repeat center;
   height: 455vh;
   background-size: cover;
+  position: relative;
   @include mobile {
-    height: calc(var(--vh, 1vh) * 560);
+    min-height: 560vh;
+    // height: calc(var(--vh, 1vh) * 560);
   }
   header {
     height: 113.75vh;
