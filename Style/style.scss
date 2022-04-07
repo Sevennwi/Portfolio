@@ -55,7 +55,7 @@ body {
         padding-right: 0;
       }
       @include mobileMedium {
-        flex-direction: column;
+        flex-wrap: nowrap;
       }
       li {
         position: relative;
@@ -68,6 +68,9 @@ body {
             margin: 0;
             padding-top: 15px;
             font-size: 1.4em;
+          }
+          @include mobileMedium {
+            font-size: 1.3em;
           }
           &:hover {
             color: $nav-color;
@@ -86,10 +89,7 @@ body {
       animation: Title 1.5s ease-in forwards;
       @include mobile {
         margin-top: 150px;
-        font-size: 3.5em;
-      }
-      @include mobileMedium {
-        margin-top: 50px;
+        font-size: 3.8em;
       }
       span {
         background: linear-gradient(45deg, #ff0062, #eb40bd, #00e1ff, #46e7c5);
@@ -109,7 +109,7 @@ body {
         font-size: 4em;
         padding-top: 50px;
         @include mobile {
-          padding-top: 30px;
+          padding-top: 100px;
           font-size: 3em;
         }
       }
@@ -191,6 +191,7 @@ body {
         @include mobile {
           padding-top: 200px;
           font-size: 3em;
+          padding-bottom: 30px;
         }
       }
       .containerModal {
@@ -209,10 +210,6 @@ body {
             box-shadow: 5px 5px 15px #222;
             transition: opacity 0.3s ease-in-out;
             @include tablet {
-              max-width: 350px;
-              margin: 10px auto;
-            }
-            @include mobile {
               margin: 10px auto;
             }
             &:hover {
