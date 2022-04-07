@@ -37,7 +37,6 @@ body {
   position: relative;
   @include mobile {
     min-height: 560vh;
-    // height: calc(var(--vh, 1vh) * 560);
   }
   header {
     height: 113.75vh;
@@ -288,7 +287,7 @@ body {
           padding-top: 0;
         }
         @include mobile {
-          max-width: 90%;
+          display: none;
         }
         .inputForm {
           margin: 40px 0;
@@ -322,21 +321,37 @@ body {
       .contactMail {
         position: relative;
         font-size: 1.2em;
+        @include mobile {
+          margin-top: 100px;
+          font-size: 1.6em;
+        }
+        .Or {
+          @include mobile {
+            display: none;
+          }
+        }
         a {
           color: white;
+          overflow-wrap: break-word;
           transition: color 0.2s ease-in-out;
           &:hover {
             color: $nav-color;
           }
+          @include mobile {
+            font-size: 1em;
+          }
         }
+      }
+      .contactMail::first-letter {
+        text-transform: capitalize;
       }
       .social {
         margin-top: 30px;
-        @include mobileSmall {
-          margin-top: 10px;
-        }
         p {
           font-size: 1.3em;
+          @include mobile {
+            font-size: 1.6em;
+          }
         }
         a {
           position: relative;
@@ -347,6 +362,9 @@ body {
             transition: color 0.2s ease;
             &:hover {
               color: #222;
+            }
+            @include mobile {
+              font-size: 4em;
             }
           }
         }

@@ -486,7 +486,7 @@ body {
 
 @media all and (max-width: 576px) {
   .background footer div form {
-    max-width: 90%;
+    display: none;
   }
 }
 
@@ -530,8 +530,22 @@ body {
   font-size: 1.2em;
 }
 
+@media all and (max-width: 576px) {
+  .background footer div .contactMail {
+    margin-top: 100px;
+    font-size: 1.6em;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .background footer div .contactMail .Or {
+    display: none;
+  }
+}
+
 .background footer div .contactMail a {
   color: white;
+  overflow-wrap: break-word;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
@@ -540,18 +554,28 @@ body {
   color: #46e7c5;
 }
 
+@media all and (max-width: 576px) {
+  .background footer div .contactMail a {
+    font-size: 1em;
+  }
+}
+
+.background footer div .contactMail::first-letter {
+  text-transform: capitalize;
+}
+
 .background footer div .social {
   margin-top: 30px;
 }
 
-@media all and (max-width: 350px) {
-  .background footer div .social {
-    margin-top: 10px;
-  }
-}
-
 .background footer div .social p {
   font-size: 1.3em;
+}
+
+@media all and (max-width: 576px) {
+  .background footer div .social p {
+    font-size: 1.6em;
+  }
 }
 
 .background footer div .social a {
@@ -568,6 +592,12 @@ body {
 
 .background footer div .social a span:hover {
   color: #222;
+}
+
+@media all and (max-width: 576px) {
+  .background footer div .social a span {
+    font-size: 4em;
+  }
 }
 
 .background input:-webkit-autofill,
