@@ -92,6 +92,26 @@ body {
   width: auto;
 }
 
+@media all and (max-width: 767px) {
+  #particles-js2 {
+    padding-top: 200px;
+    height: 2660px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  #particles-js2 {
+    padding-top: 150px;
+    height: 2260px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  #particles-js2 {
+    height: 2160px;
+  }
+}
+
 /* Animation globale */
 .slideIn {
   opacity: 0;
@@ -220,9 +240,15 @@ body {
   padding-top: 50px;
 }
 
+@media all and (max-width: 767px) {
+  .background section .about h2 {
+    padding-top: 250px;
+  }
+}
+
 @media all and (max-width: 576px) {
   .background section .about h2 {
-    padding-top: 100px;
+    padding-top: 130px;
     font-size: 3em;
   }
 }
@@ -419,7 +445,7 @@ body {
 }
 
 .background section .project .containerModal .modal-content {
-  background-color: #222;
+  background: rgba(34, 34, 34, 0.9);
 }
 
 .background section .project .containerModal .modal-content .modal-body img {
@@ -438,6 +464,10 @@ body {
   .background section .project .containerModal .modal-content .modal-body p {
     width: 100%;
   }
+}
+
+.background section .project .containerModal .modal-content .modal-footer {
+  border: none;
 }
 
 .background section .project .containerModal .modal-content .modal-footer button,
@@ -489,14 +519,31 @@ body {
   border: none;
 }
 
-.background footer div form .inputForm textarea {
+.background footer div form .inputForm label {
+  color: white;
+}
+
+.background footer div form .form-floatingTextArea:before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  /* border-width (default by BS) */
+  width: calc(100% - 18px);
+  /* to show scrollbar */
+  height: 32px;
+  border-radius: 4px;
+  /* (default by BS) */
+  background-color: #222;
+}
+
+.background footer div form .form-floatingTextArea textarea.form-control {
+  padding-top: 30px;
+  /* height of pseudo element */
+  min-height: 80px;
+  /* not relevant */
   background-color: #222;
   color: white;
   border: none;
-}
-
-.background footer div form .inputForm label {
-  color: white;
 }
 
 .background footer div form .submit {

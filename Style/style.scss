@@ -21,6 +21,17 @@ body {
   padding-top: 100px;
   height: 2160px;
   width: auto;
+  @include tablet {
+    padding-top: 200px;
+    height: 2660px;
+  }
+  @include mobile {
+    padding-top: 150px;
+    height: 2260px;
+  }
+  @include mobileMedium {
+    height: 2160px;
+  }
 }
 
 /* Animation globale */
@@ -108,8 +119,11 @@ body {
       h2 {
         font-size: 4em;
         padding-top: 50px;
+        @include tablet {
+          padding-top: 250px;
+        }
         @include mobile {
-          padding-top: 100px;
+          padding-top: 130px;
           font-size: 3em;
         }
       }
@@ -239,7 +253,7 @@ body {
           }
         }
         .modal-content {
-          background-color: #222;
+          background: rgba($color: #222, $alpha: 0.9);
           .modal-body {
             img {
               border-radius: 5px;
@@ -256,6 +270,7 @@ body {
             }
           }
           .modal-footer {
+            border: none;
             button,
             a {
               font-size: 1.1em;
@@ -293,15 +308,29 @@ body {
             color: white;
             border: none;
           }
-          textarea {
-            background-color: #222;
-            color: white;
-            border: none;
-          }
           label {
             color: white;
           }
         }
+        .form-floatingTextArea {
+          &:before {
+            content: "";
+            position: absolute;
+            left: 1px; /* border-width (default by BS) */
+            width: calc(100% - 18px); /* to show scrollbar */
+            height: 32px;
+            border-radius: 4px; /* (default by BS) */
+            background-color: #222;
+          }
+          textarea.form-control {
+            padding-top: 30px; /* height of pseudo element */
+            min-height: 80px; /* not relevant */
+            background-color: #222;
+            color: white;
+            border: none;
+          }
+        }
+
         .submit {
           position: relative;
           margin-bottom: 40px;
