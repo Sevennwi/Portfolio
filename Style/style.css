@@ -255,7 +255,7 @@ body {
 
 .background section .about .profilPicture {
   margin-top: 70px;
-  background-color: rgba(242, 242, 242, 0.5);
+  background-color: rgba(242, 242, 242, 0.3);
   border-radius: 15px;
 }
 
@@ -287,7 +287,7 @@ body {
 
 .background section .about .workingLearning {
   margin-top: 80px;
-  background-color: rgba(242, 242, 242, 0.5);
+  background-color: rgba(242, 242, 242, 0.3);
   border-radius: 15px;
 }
 
