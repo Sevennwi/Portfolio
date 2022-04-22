@@ -75,8 +75,14 @@ body {
 
 #particles-js {
   position: absolute;
-  height: 100vh;
+  height: 980px;
   width: auto;
+}
+
+@media all and (max-width: 767px) {
+  #particles-js {
+    height: 1080px;
+  }
 }
 
 @media all and (max-width: 576px) {

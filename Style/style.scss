@@ -9,8 +9,11 @@ body {
 
 #particles-js {
   position: absolute;
-  height: 100vh;
+  height: 980px;
   width: auto;
+  @include tablet {
+    height: 1080px;
+  }
   @include mobile {
     height: 120vh;
   }
