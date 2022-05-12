@@ -256,10 +256,16 @@ body {
           }
         }
         .modal-content {
-          background: rgba($color: #222, $alpha: 0.9);
+          background: rgba($color: #222, $alpha: 0.97);
+          border: none;
+          margin-top: 50px;
+          @include tablet {
+            margin-top: 100px;
+          }
           .modal-body {
+            padding: 0;
             img {
-              border-radius: 5px;
+              border-radius: 5px 5px 0 0;
             }
             p {
               color: white;
@@ -277,6 +283,17 @@ body {
             button,
             a {
               font-size: 1.1em;
+            }
+            .close-modal {
+              position: absolute;
+              top: -10px;
+              right: -2px;
+              font-size: 1.8em;
+              color: black;
+              z-index: 9999;
+              :hover {
+                color: #dc143c;
+              }
             }
           }
         }

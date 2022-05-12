@@ -451,11 +451,23 @@ body {
 }
 
 .background section .project .containerModal .modal-content {
-  background: rgba(34, 34, 34, 0.9);
+  background: rgba(34, 34, 34, 0.97);
+  border: none;
+  margin-top: 50px;
+}
+
+@media all and (max-width: 767px) {
+  .background section .project .containerModal .modal-content {
+    margin-top: 100px;
+  }
+}
+
+.background section .project .containerModal .modal-content .modal-body {
+  padding: 0;
 }
 
 .background section .project .containerModal .modal-content .modal-body img {
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
 }
 
 .background section .project .containerModal .modal-content .modal-body p {
@@ -479,6 +491,19 @@ body {
 .background section .project .containerModal .modal-content .modal-footer button,
 .background section .project .containerModal .modal-content .modal-footer a {
   font-size: 1.1em;
+}
+
+.background section .project .containerModal .modal-content .modal-footer .close-modal {
+  position: absolute;
+  top: -10px;
+  right: -2px;
+  font-size: 1.8em;
+  color: black;
+  z-index: 9999;
+}
+
+.background section .project .containerModal .modal-content .modal-footer .close-modal :hover {
+  color: #dc143c;
 }
 
 .background footer {
