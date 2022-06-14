@@ -57,6 +57,7 @@ body {
   } */
   header {
     min-height: 1080px;
+    overflow-x: hidden;
     ul {
       display: flex;
       justify-content: flex-end;
@@ -95,12 +96,65 @@ body {
         }
       }
     }
+    .RedPlanet {
+      position: absolute;
+      width: 60px;
+      top: 650px;
+      left: 200px;
+      z-index: 2;
+      cursor: crosshair;
+      animation: float-red 5s ease-in-out infinite;
+      filter: drop-shadow(0 0 15px crimson);
+      &:hover {
+        animation: EXPLOSION 3s linear forwards;
+      }
+      @include ordi {
+        top: 750px;
+      }
+      @include mobile {
+        left: 100px;
+        top: 650px;
+      }
+      @include mobileMedium {
+        left: 100px;
+        top: 700px;
+      }
+      @include mobileSmall {
+        right: 100px;
+        top: 730px;
+      }
+    }
+    .BluePlanet {
+      position: absolute;
+      width: 40px;
+      top: 200px;
+      right: 250px;
+      cursor: crosshair;
+      animation: float-blue 5s ease-in-out 0.5s infinite;
+      filter: drop-shadow(0 0 10px rgb(0, 132, 255));
+      &:hover {
+        animation: EXPLOSION-2 3s linear forwards;
+      }
+      @include tablet {
+        top: 150px;
+      }
+      @include mobile {
+        right: 100px;
+        top: 100px;
+      }
+    }
     h1 {
       font-size: 5em;
       max-width: 900px;
       line-height: 1.6em;
       margin: 250px auto 0;
       animation: Title 1.5s ease-in forwards;
+      @include ordi {
+        font-size: 4.7em;
+      }
+      @include tablet {
+        font-size: 5em;
+      }
       @include mobile {
         margin-top: 150px;
         font-size: 3.8em;
@@ -114,11 +168,41 @@ body {
         animation: gradient 10s ease infinite;
       }
     }
+
+    .wrapperSpace {
+      animation: y-axis 3s ease-in-out infinite;
+      z-index: 1;
+      .SpaceUfo {
+        width: 80px;
+        margin-top: -180px;
+        position: relative;
+        left: -30%;
+        animation: x-axis 50s linear 0s infinite;
+        transform: rotate(0deg);
+        transition: transform 1s ease-in-out;
+        &:active {
+          transform: rotate(360deg);
+          transition: 0s;
+        }
+        @include tablet {
+          animation-duration: 30s;
+          margin-top: 60px;
+        }
+        @include mobile {
+          animation-duration: 20s;
+        }
+        @include mobileSmall {
+          left: -32%;
+        }
+      }
+    }
   }
 
   section {
+    overflow: hidden;
     .about {
       min-height: 1080px;
+
       h2 {
         font-size: 4em;
         padding-top: 50px;
@@ -130,8 +214,26 @@ body {
           font-size: 3em;
         }
       }
+      .SkyAirship {
+        width: 75px;
+        height: auto;
+        margin-top: 0;
+        z-index: 0;
+        position: relative;
+        right: -110%;
+        animation: Airship 270s linear infinite;
+        @include ordi {
+          animation-duration: 200s;
+        }
+        @include tablet {
+          animation-duration: 120s;
+        }
+        @include mobile {
+          animation-duration: 70s;
+        }
+      }
       .profilPicture {
-        margin-top: 70px;
+        margin-top: 50px;
         background-color: rgba($color: #f2f2f2, $alpha: 0.3);
         border-radius: 15px;
         @include mobile {
@@ -196,9 +298,20 @@ body {
           }
         }
       }
+      .boat {
+        margin: 20px 0 50px;
+        position: relative;
+        animation: Boat 7s ease-in-out infinite;
+        @include tablet {
+          margin: 20px 0 100px;
+        }
+      }
     }
     .project {
-      min-height: 1080px;
+      min-height: 1280px;
+      &::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+      }
       h2 {
         font-size: 4em;
         padding-top: 150px;
@@ -209,6 +322,46 @@ body {
           padding-top: 200px;
           font-size: 3em;
           padding-bottom: 30px;
+        }
+      }
+      .fishes {
+        position: relative;
+        .group-fish {
+          position: absolute;
+          right: 0px;
+          width: 300px;
+          height: auto;
+          fill: #436db0;
+          animation: group-fish 20s linear infinite;
+          transform: rotate(-17deg);
+          .cls-1 {
+            @include multiple-fish-mouv;
+          }
+          @include tablet {
+            animation-duration: 14s;
+          }
+          @include mobile {
+            animation-duration: 7s;
+          }
+        }
+        .group-fish-2 {
+          position: absolute;
+          top: 700px;
+          width: 250px;
+          transform: scaleX(-1) rotate(7deg);
+          animation: group-fish-2 30s linear infinite;
+          .fish-1,
+          .fish-2,
+          .fish-3,
+          .fish-4 {
+            @include multiple-fish-mouv;
+          }
+          @include tablet {
+            animation-duration: 20s;
+          }
+          @include mobile {
+            animation-duration: 15s;
+          }
         }
       }
       .containerModal {
@@ -302,6 +455,7 @@ body {
   }
   footer {
     min-height: 1080px;
+    overflow: hidden;
     h2 {
       font-size: 4em;
       padding-top: 100px;
@@ -313,10 +467,24 @@ body {
         padding-top: 200px;
       }
     }
+    .wrapper-alone-fish {
+      animation: y-axis-alone-fish 2s ease-in-out infinite;
+      .alone-fish {
+        position: relative;
+        width: 100px;
+        top: 50px;
+        animation: alone-fish-test 25s linear infinite;
+        path {
+          fill: #56a7c4;
+        }
+        @include mobile {
+          animation: alone-fish-test-mobile 15s linear infinite;
+        }
+      }
+    }
     div {
       form {
         max-width: 70%;
-        padding-top: 50px;
         margin: 0 auto;
         @include tablet {
           padding-top: 0;
