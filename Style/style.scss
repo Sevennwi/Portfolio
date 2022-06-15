@@ -9,6 +9,7 @@ body {
 
 #particles-js {
   position: absolute;
+  left: 0;
   height: 980px;
   width: auto;
   @include tablet {
@@ -21,6 +22,7 @@ body {
 
 #particles-js2 {
   position: absolute;
+  left: 0;
   padding-top: 100px;
   height: 2160px;
   width: auto;
