@@ -106,7 +106,7 @@ body {
       animation: float-red 5s ease-in-out infinite;
       filter: drop-shadow(0 0 15px crimson);
       &:hover {
-        animation: EXPLOSION 3s linear forwards;
+        animation: EXPLOSION-RED 3s linear forwards;
       }
       @include ordi {
         top: 750px;
@@ -133,7 +133,7 @@ body {
       animation: float-blue 5s ease-in-out 0.5s infinite;
       filter: drop-shadow(0 0 10px rgb(0, 132, 255));
       &:hover {
-        animation: EXPLOSION-2 3s linear forwards;
+        animation: EXPLOSION-BLUE 3s linear forwards;
       }
       @include tablet {
         top: 150px;
@@ -177,7 +177,7 @@ body {
         margin-top: -180px;
         position: relative;
         left: -30%;
-        animation: x-axis 50s linear 0s infinite;
+        animation: x-axis 50s linear 5s infinite;
         transform: rotate(0deg);
         transition: transform 1s ease-in-out;
         &:active {
@@ -473,12 +473,15 @@ body {
         position: relative;
         width: 100px;
         top: 50px;
-        animation: alone-fish-test 25s linear infinite;
+        animation: alone-fish 25s linear infinite;
         path {
           fill: #56a7c4;
         }
+        @include tablet {
+          animation: alone-fish-tablet 20s linear infinite;
+        }
         @include mobile {
-          animation: alone-fish-test-mobile 15s linear infinite;
+          animation: alone-fish-mobile 15s linear infinite;
         }
       }
     }

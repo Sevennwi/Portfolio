@@ -84,12 +84,12 @@ $rotate-boat-pos: 2deg;
   }
 }
 
-@keyframes EXPLOSION {
+@keyframes EXPLOSION-RED {
   0% {
     filter: brightness(100%);
-    transform: scale(1);
+    transform: scale(1) translateY(4px);
   }
-  95% {
+  90% {
     filter: brightness(1000%);
     transform: scale(1.2) rotate(0deg);
   }
@@ -99,12 +99,12 @@ $rotate-boat-pos: 2deg;
   }
 }
 
-@keyframes EXPLOSION-2 {
+@keyframes EXPLOSION-BLUE {
   0% {
     filter: brightness(100%);
-    transform: scale(1);
+    transform: scale(1) translateY(3px);;
   }
-  95% {
+  90% {
     filter: brightness(400%);
     transform: scale(1.2) rotate(0deg);
   }
@@ -234,37 +234,9 @@ $rotate-boat-pos: 2deg;
 
 @keyframes alone-fish {
   0% {
-    left: -10%;
-    top: 100px;
-    transform: rotate(10deg);
-  }
-  40% {
-    transform: rotate(15deg);
-  }
-  50% {
-    left: 50%;
-    top: 335px;
-    transform: rotate(-15deg);
-  }
-  60% {
-    transform: rotate(-20deg);
-  }
-  90% {
-    top: 0px;
-    left: 110%;
-    transform: rotate(-30deg);
-  }
-  100% {
-    top: 200px;
-    left: 110%;
-  }
-}
-
-@keyframes alone-fish-test {
-  0% {
     left: -20%;
     top: 0px;
-    transform: rotate(5deg);
+    transform: rotate(7deg);
   }
   70% {
     top: 400px;
@@ -277,7 +249,24 @@ $rotate-boat-pos: 2deg;
   }
 }
 
-@keyframes alone-fish-test-mobile {
+@keyframes alone-fish-tablet {
+  0% {
+    left: -40%;
+    top: 0px;
+    transform: rotate(10deg);
+  }
+  70% {
+    top: 400px;
+    left: 110%;
+    transform: rotate(20deg);
+  }
+  100% {
+    top: 200px;
+    left: 110%;
+  }
+}
+
+@keyframes alone-fish-mobile {
   0% {
     left: -40%;
     top: 0px;
@@ -296,7 +285,7 @@ $rotate-boat-pos: 2deg;
 
 @keyframes y-axis-alone-fish {
   50% {
-    transform: translateY(5px);
+    transform: translateY(6px);
   }
 }
 
