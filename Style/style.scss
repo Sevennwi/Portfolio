@@ -131,7 +131,7 @@ body {
       right: 250px;
       cursor: crosshair;
       animation: float-blue 5s ease-in-out 0.5s infinite;
-      filter: drop-shadow(0 0 10px rgb(0, 132, 255));
+      filter: drop-shadow(0 0 15px rgb(0, 132, 255));
       &:hover {
         animation: EXPLOSION-BLUE 3s linear forwards;
       }
