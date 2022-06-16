@@ -86,30 +86,30 @@ $rotate-boat-pos: 2deg;
 
 @keyframes EXPLOSION-RED {
   0% {
-    filter: brightness(100%);
+    filter: brightness(1);
     transform: scale(1) translateY(4px);
   }
   90% {
-    filter: brightness(1000%);
+    filter: brightness(10);
     transform: scale(1.2) rotate(0deg);
   }
   100% {
-    filter: brightness(0%)  drop-shadow(0 0 15px black) blur(2px);
+    filter: brightness(0)  drop-shadow(0 0 15px black) blur(2px);
     transform: scale(0.7) rotate(100deg);
   }
 }
 
 @keyframes EXPLOSION-BLUE {
   0% {
-    filter: brightness(100%);
+    filter: brightness(1);
     transform: scale(1) translateY(3px);;
   }
   90% {
-    filter: brightness(400%);
+    filter: brightness(4);
     transform: scale(1.2) rotate(0deg);
   }
   100% {
-    filter: brightness(0%)  drop-shadow(0 0 15px black) blur(2px);
+    filter: brightness(0)  drop-shadow(0 0 15px black) blur(2px);
     transform: scale(0.7) rotate(100deg);
   }
 }

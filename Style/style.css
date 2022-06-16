@@ -96,20 +96,20 @@
 
 @-webkit-keyframes EXPLOSION-RED {
   0% {
-    -webkit-filter: brightness(100%);
-            filter: brightness(100%);
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
     -webkit-transform: scale(1) translateY(4px);
             transform: scale(1) translateY(4px);
   }
   90% {
-    -webkit-filter: brightness(1000%);
-            filter: brightness(1000%);
+    -webkit-filter: brightness(10);
+            filter: brightness(10);
     -webkit-transform: scale(1.2) rotate(0deg);
             transform: scale(1.2) rotate(0deg);
   }
   100% {
-    -webkit-filter: brightness(0%) drop-shadow(0 0 15px black) blur(2px);
-            filter: brightness(0%) drop-shadow(0 0 15px black) blur(2px);
+    -webkit-filter: brightness(0) drop-shadow(0 0 15px black) blur(2px);
+            filter: brightness(0) drop-shadow(0 0 15px black) blur(2px);
     -webkit-transform: scale(0.7) rotate(100deg);
             transform: scale(0.7) rotate(100deg);
   }
@@ -117,20 +117,20 @@
 
 @keyframes EXPLOSION-RED {
   0% {
-    -webkit-filter: brightness(100%);
-            filter: brightness(100%);
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
     -webkit-transform: scale(1) translateY(4px);
             transform: scale(1) translateY(4px);
   }
   90% {
-    -webkit-filter: brightness(1000%);
-            filter: brightness(1000%);
+    -webkit-filter: brightness(10);
+            filter: brightness(10);
     -webkit-transform: scale(1.2) rotate(0deg);
             transform: scale(1.2) rotate(0deg);
   }
   100% {
-    -webkit-filter: brightness(0%) drop-shadow(0 0 15px black) blur(2px);
-            filter: brightness(0%) drop-shadow(0 0 15px black) blur(2px);
+    -webkit-filter: brightness(0) drop-shadow(0 0 15px black) blur(2px);
+            filter: brightness(0) drop-shadow(0 0 15px black) blur(2px);
     -webkit-transform: scale(0.7) rotate(100deg);
             transform: scale(0.7) rotate(100deg);
   }
@@ -138,20 +138,20 @@
 
 @-webkit-keyframes EXPLOSION-BLUE {
   0% {
-    -webkit-filter: brightness(100%);
-            filter: brightness(100%);
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
     -webkit-transform: scale(1) translateY(3px);
             transform: scale(1) translateY(3px);
   }
   90% {
-    -webkit-filter: brightness(400%);
-            filter: brightness(400%);
+    -webkit-filter: brightness(4);
+            filter: brightness(4);
     -webkit-transform: scale(1.2) rotate(0deg);
             transform: scale(1.2) rotate(0deg);
   }
   100% {
-    -webkit-filter: brightness(0%) drop-shadow(0 0 15px black) blur(2px);
-            filter: brightness(0%) drop-shadow(0 0 15px black) blur(2px);
+    -webkit-filter: brightness(0) drop-shadow(0 0 15px black) blur(2px);
+            filter: brightness(0) drop-shadow(0 0 15px black) blur(2px);
     -webkit-transform: scale(0.7) rotate(100deg);
             transform: scale(0.7) rotate(100deg);
   }
@@ -159,20 +159,20 @@
 
 @keyframes EXPLOSION-BLUE {
   0% {
-    -webkit-filter: brightness(100%);
-            filter: brightness(100%);
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
     -webkit-transform: scale(1) translateY(3px);
             transform: scale(1) translateY(3px);
   }
   90% {
-    -webkit-filter: brightness(400%);
-            filter: brightness(400%);
+    -webkit-filter: brightness(4);
+            filter: brightness(4);
     -webkit-transform: scale(1.2) rotate(0deg);
             transform: scale(1.2) rotate(0deg);
   }
   100% {
-    -webkit-filter: brightness(0%) drop-shadow(0 0 15px black) blur(2px);
-            filter: brightness(0%) drop-shadow(0 0 15px black) blur(2px);
+    -webkit-filter: brightness(0) drop-shadow(0 0 15px black) blur(2px);
+            filter: brightness(0) drop-shadow(0 0 15px black) blur(2px);
     -webkit-transform: scale(0.7) rotate(100deg);
             transform: scale(0.7) rotate(100deg);
   }
@@ -360,8 +360,8 @@
             transform: rotate(0deg);
   }
   50% {
-    -webkit-transform: translateY(2px) rotate(2.92207deg);
-            transform: translateY(2px) rotate(2.92207deg);
+    -webkit-transform: translateY(2px) rotate(2.87746deg);
+            transform: translateY(2px) rotate(2.87746deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
@@ -375,8 +375,8 @@
             transform: rotate(0deg);
   }
   50% {
-    -webkit-transform: translateY(2px) rotate(2.92207deg);
-            transform: translateY(2px) rotate(2.92207deg);
+    -webkit-transform: translateY(2px) rotate(2.87746deg);
+            transform: translateY(2px) rotate(2.87746deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
@@ -1050,78 +1050,78 @@ body {
 .background section .project .fishes .group-fish .cls-1:nth-child(1) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.53455s;
-          animation-delay: 0.53455s;
+  -webkit-animation-delay: 0.57409s;
+          animation-delay: 0.57409s;
 }
 
 .background section .project .fishes .group-fish .cls-1:nth-child(2) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.86118s;
-          animation-delay: 0.86118s;
+  -webkit-animation-delay: 0.95149s;
+          animation-delay: 0.95149s;
 }
 
 .background section .project .fishes .group-fish .cls-1:nth-child(3) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.20051s;
-          animation-delay: 0.20051s;
+  -webkit-animation-delay: 0.99873s;
+          animation-delay: 0.99873s;
 }
 
 .background section .project .fishes .group-fish .cls-1:nth-child(4) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.72965s;
-          animation-delay: 0.72965s;
+  -webkit-animation-delay: 0.43681s;
+          animation-delay: 0.43681s;
 }
 
 .background section .project .fishes .group-fish .cls-1:nth-child(5) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.75631s;
-          animation-delay: 0.75631s;
+  -webkit-animation-delay: 0.62048s;
+          animation-delay: 0.62048s;
 }
 
 .background section .project .fishes .group-fish .cls-1:nth-child(6) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.10565s;
-          animation-delay: 0.10565s;
+  -webkit-animation-delay: 0.10084s;
+          animation-delay: 0.10084s;
 }
 
 .background section .project .fishes .group-fish .cls-1:nth-child(7) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.81952s;
-          animation-delay: 0.81952s;
+  -webkit-animation-delay: 0.64148s;
+          animation-delay: 0.64148s;
 }
 
 .background section .project .fishes .group-fish .cls-1:nth-child(8) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.58764s;
-          animation-delay: 0.58764s;
+  -webkit-animation-delay: 0.92104s;
+          animation-delay: 0.92104s;
 }
 
 .background section .project .fishes .group-fish .cls-1:nth-child(9) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.3174s;
-          animation-delay: 0.3174s;
+  -webkit-animation-delay: 0.43894s;
+          animation-delay: 0.43894s;
 }
 
 .background section .project .fishes .group-fish .cls-1:nth-child(10) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.89355s;
-          animation-delay: 0.89355s;
+  -webkit-animation-delay: 0.31936s;
+          animation-delay: 0.31936s;
 }
 
 .background section .project .fishes .group-fish .cls-1:nth-child(11) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.57572s;
-          animation-delay: 0.57572s;
+  -webkit-animation-delay: 0.21358s;
+          animation-delay: 0.21358s;
 }
 
 @media all and (max-width: 767px) {
@@ -1154,8 +1154,8 @@ body {
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(1) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.32164s;
-          animation-delay: 0.32164s;
+  -webkit-animation-delay: 0.96608s;
+          animation-delay: 0.96608s;
 }
 
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(2),
@@ -1164,8 +1164,8 @@ body {
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(2) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.42649s;
-          animation-delay: 0.42649s;
+  -webkit-animation-delay: 0.10593s;
+          animation-delay: 0.10593s;
 }
 
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(3),
@@ -1174,8 +1174,8 @@ body {
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(3) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.35897s;
-          animation-delay: 0.35897s;
+  -webkit-animation-delay: 0.77442s;
+          animation-delay: 0.77442s;
 }
 
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(4),
@@ -1184,8 +1184,8 @@ body {
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(4) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.01741s;
-          animation-delay: 0.01741s;
+  -webkit-animation-delay: 0.07634s;
+          animation-delay: 0.07634s;
 }
 
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(5),
@@ -1194,8 +1194,8 @@ body {
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(5) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.5845s;
-          animation-delay: 0.5845s;
+  -webkit-animation-delay: 0.38314s;
+          animation-delay: 0.38314s;
 }
 
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(6),
@@ -1204,8 +1204,8 @@ body {
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(6) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.57357s;
-          animation-delay: 0.57357s;
+  -webkit-animation-delay: 0.31588s;
+          animation-delay: 0.31588s;
 }
 
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(7),
@@ -1214,8 +1214,8 @@ body {
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(7) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.81373s;
-          animation-delay: 0.81373s;
+  -webkit-animation-delay: 0.25661s;
+          animation-delay: 0.25661s;
 }
 
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(8),
@@ -1224,8 +1224,8 @@ body {
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(8) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.20934s;
-          animation-delay: 0.20934s;
+  -webkit-animation-delay: 0.2001s;
+          animation-delay: 0.2001s;
 }
 
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(9),
@@ -1234,8 +1234,8 @@ body {
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(9) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.41433s;
-          animation-delay: 0.41433s;
+  -webkit-animation-delay: 0.16389s;
+          animation-delay: 0.16389s;
 }
 
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(10),
@@ -1244,8 +1244,8 @@ body {
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(10) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.0492s;
-          animation-delay: 0.0492s;
+  -webkit-animation-delay: 0.88111s;
+          animation-delay: 0.88111s;
 }
 
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(11),
@@ -1254,8 +1254,8 @@ body {
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(11) {
   -webkit-animation: y-axis-fish 2s ease-in-out infinite;
           animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.73624s;
-          animation-delay: 0.73624s;
+  -webkit-animation-delay: 0.90629s;
+          animation-delay: 0.90629s;
 }
 
 @media all and (max-width: 767px) {
