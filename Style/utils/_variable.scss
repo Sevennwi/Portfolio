@@ -94,7 +94,7 @@ $rotate-boat-pos: 2deg;
     transform: scale(1.2) rotate(0deg);
   }
   100% {
-    filter: brightness(0)  drop-shadow(0 0 15px black) blur(2px);
+    filter: brightness(0) blur(2px) drop-shadow(0 0 15px black);
     transform: scale(0.7) rotate(100deg);
   }
 }
@@ -102,18 +102,17 @@ $rotate-boat-pos: 2deg;
 @keyframes EXPLOSION-BLUE {
   0% {
     filter: brightness(1);
-    transform: scale(1) translateY(3px);;
+    transform: scale(1) translateY(3px);
   }
   90% {
     filter: brightness(4);
     transform: scale(1.2) rotate(0deg);
   }
   100% {
-    filter: brightness(0)  drop-shadow(0 0 15px black) blur(2px);
+    filter: brightness(0) blur(2px) drop-shadow(0 0 15px black);
     transform: scale(0.7) rotate(100deg);
   }
 }
-
 
 // UFO Animation
 
@@ -191,7 +190,6 @@ $rotate-boat-pos: 2deg;
   0% {
     right: -110%;
     top: 0;
-
   }
   70% {
     right: 110%;
@@ -288,7 +286,6 @@ $rotate-boat-pos: 2deg;
     transform: translateY(6px);
   }
 }
-
 
 // Pour débuger quand ça sort de l'écran
 
