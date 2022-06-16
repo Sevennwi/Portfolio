@@ -11,7 +11,7 @@ body {
   position: absolute;
   left: 0;
   height: 980px;
-  width: auto;
+  width: 100%;
   @include tablet {
     height: 1080px;
   }
@@ -25,7 +25,7 @@ body {
   left: 0;
   padding-top: 100px;
   height: 2160px;
-  width: auto;
+  width: 100%;
   @include tablet {
     padding-top: 200px;
     height: 2660px;
@@ -106,7 +106,7 @@ body {
       z-index: 2;
       cursor: crosshair;
       animation: float-red 5s ease-in-out infinite;
-      filter: drop-shadow(0 0 15px crimson);
+      filter: drop-shadow(0 0 15px crimson) brightness(1);
       &:hover {
         animation: EXPLOSION-RED 3s linear forwards;
       }
@@ -133,7 +133,7 @@ body {
       right: 250px;
       cursor: crosshair;
       animation: float-blue 5s ease-in-out 0.5s infinite;
-      filter: drop-shadow(0 0 15px rgb(0, 132, 255));
+      filter: drop-shadow(0 0 15px rgb(0, 132, 255)) brightness(1);
       &:hover {
         animation: EXPLOSION-BLUE 3s linear forwards;
       }
