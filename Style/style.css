@@ -1,12 +1,3 @@
-@-webkit-keyframes Title {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes Title {
   from {
     opacity: 0;
@@ -15,19 +6,6 @@
     opacity: 1;
   }
 }
-
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -39,166 +17,54 @@
     background-position: 0% 50%;
   }
 }
-
-@-webkit-keyframes slideInTop {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
 @keyframes slideInTop {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
-
-@-webkit-keyframes float-red {
-  50% {
-    -webkit-transform: translateY(8px);
-            transform: translateY(8px);
-  }
-}
-
 @keyframes float-red {
   50% {
-    -webkit-transform: translateY(8px);
-            transform: translateY(8px);
+    transform: translateY(8px);
   }
 }
-
-@-webkit-keyframes float-blue {
-  50% {
-    -webkit-transform: translateY(6px);
-            transform: translateY(6px);
-  }
-}
-
 @keyframes float-blue {
   50% {
-    -webkit-transform: translateY(6px);
-            transform: translateY(6px);
+    transform: translateY(6px);
   }
 }
-
-@-webkit-keyframes EXPLOSION-RED {
-  0% {
-    -webkit-filter: brightness(1);
-            filter: brightness(1);
-    -webkit-transform: scale(1) translateY(4px);
-            transform: scale(1) translateY(4px);
-  }
-  90% {
-    -webkit-filter: brightness(10);
-            filter: brightness(10);
-    -webkit-transform: scale(1.2) rotate(0deg);
-            transform: scale(1.2) rotate(0deg);
-  }
-  100% {
-    -webkit-filter: brightness(0) blur(2px) drop-shadow(0 0 15px black);
-            filter: brightness(0) blur(2px) drop-shadow(0 0 15px black);
-    -webkit-transform: scale(0.7) rotate(100deg);
-            transform: scale(0.7) rotate(100deg);
-  }
-}
-
 @keyframes EXPLOSION-RED {
   0% {
-    -webkit-filter: brightness(1);
-            filter: brightness(1);
-    -webkit-transform: scale(1) translateY(4px);
-            transform: scale(1) translateY(4px);
+    filter: brightness(1);
+    transform: scale(1) translateY(4px);
   }
   90% {
-    -webkit-filter: brightness(10);
-            filter: brightness(10);
-    -webkit-transform: scale(1.2) rotate(0deg);
-            transform: scale(1.2) rotate(0deg);
+    filter: brightness(10);
+    transform: scale(1.2) rotate(0deg);
   }
   100% {
-    -webkit-filter: brightness(0) blur(2px) drop-shadow(0 0 15px black);
-            filter: brightness(0) blur(2px) drop-shadow(0 0 15px black);
-    -webkit-transform: scale(0.7) rotate(100deg);
-            transform: scale(0.7) rotate(100deg);
+    filter: brightness(0) blur(2px) drop-shadow(0 0 15px black);
+    transform: scale(0.7) rotate(100deg);
   }
 }
-
-@-webkit-keyframes EXPLOSION-BLUE {
-  0% {
-    -webkit-filter: brightness(1);
-            filter: brightness(1);
-    -webkit-transform: scale(1) translateY(3px);
-            transform: scale(1) translateY(3px);
-  }
-  90% {
-    -webkit-filter: brightness(4);
-            filter: brightness(4);
-    -webkit-transform: scale(1.2) rotate(0deg);
-            transform: scale(1.2) rotate(0deg);
-  }
-  100% {
-    -webkit-filter: brightness(0) blur(2px) drop-shadow(0 0 15px black);
-            filter: brightness(0) blur(2px) drop-shadow(0 0 15px black);
-    -webkit-transform: scale(0.7) rotate(100deg);
-            transform: scale(0.7) rotate(100deg);
-  }
-}
-
 @keyframes EXPLOSION-BLUE {
   0% {
-    -webkit-filter: brightness(1);
-            filter: brightness(1);
-    -webkit-transform: scale(1) translateY(3px);
-            transform: scale(1) translateY(3px);
+    filter: brightness(1);
+    transform: scale(1) translateY(3px);
   }
   90% {
-    -webkit-filter: brightness(4);
-            filter: brightness(4);
-    -webkit-transform: scale(1.2) rotate(0deg);
-            transform: scale(1.2) rotate(0deg);
+    filter: brightness(4);
+    transform: scale(1.2) rotate(0deg);
   }
   100% {
-    -webkit-filter: brightness(0) blur(2px) drop-shadow(0 0 15px black);
-            filter: brightness(0) blur(2px) drop-shadow(0 0 15px black);
-    -webkit-transform: scale(0.7) rotate(100deg);
-            transform: scale(0.7) rotate(100deg);
+    filter: brightness(0) blur(2px) drop-shadow(0 0 15px black);
+    transform: scale(0.7) rotate(100deg);
   }
 }
-
-@-webkit-keyframes x-axis {
-  0% {
-    left: -30%;
-    top: 0px;
-  }
-  15% {
-    left: 50%;
-  }
-  18% {
-    left: 50%;
-  }
-  28% {
-    left: 110%;
-    top: 200px;
-  }
-  100% {
-    left: 110%;
-    top: 200px;
-  }
-}
-
 @keyframes x-axis {
   0% {
     left: -30%;
@@ -219,36 +85,11 @@
     top: 200px;
   }
 }
-
-@-webkit-keyframes y-axis {
-  50% {
-    -webkit-transform: translateY(70px);
-            transform: translateY(70px);
-  }
-}
-
 @keyframes y-axis {
   50% {
-    -webkit-transform: translateY(70px);
-            transform: translateY(70px);
+    transform: translateY(70px);
   }
 }
-
-@-webkit-keyframes Airship {
-  0% {
-    right: -110%;
-  }
-  1% {
-    right: -102%;
-  }
-  90% {
-    right: 100%;
-  }
-  100% {
-    right: 100%;
-  }
-}
-
 @keyframes Airship {
   0% {
     right: -110%;
@@ -263,52 +104,17 @@
     right: 100%;
   }
 }
-
-@-webkit-keyframes Boat {
-  0% {
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
-  }
-  50% {
-    -webkit-transform: rotate(2deg) translateY(4px);
-            transform: rotate(2deg) translateY(4px);
-  }
-  100% {
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
-  }
-}
-
 @keyframes Boat {
   0% {
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
+    transform: rotate(-2deg);
   }
   50% {
-    -webkit-transform: rotate(2deg) translateY(4px);
-            transform: rotate(2deg) translateY(4px);
+    transform: rotate(2deg) translateY(4px);
   }
   100% {
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
+    transform: rotate(-2deg);
   }
 }
-
-@-webkit-keyframes group-fish {
-  0% {
-    right: -110%;
-    top: 0;
-  }
-  70% {
-    right: 110%;
-    top: 200px;
-  }
-  100% {
-    right: 110%;
-    top: 200px;
-  }
-}
-
 @keyframes group-fish {
   0% {
     right: -110%;
@@ -323,22 +129,6 @@
     top: 200px;
   }
 }
-
-@-webkit-keyframes group-fish-2 {
-  0% {
-    left: -100%;
-    top: 700px;
-  }
-  70% {
-    left: 110%;
-    top: 500px;
-  }
-  100% {
-    left: 110%;
-    top: 500px;
-  }
-}
-
 @keyframes group-fish-2 {
   0% {
     left: -100%;
@@ -353,165 +143,70 @@
     top: 500px;
   }
 }
-
-@-webkit-keyframes y-axis-fish {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  50% {
-    -webkit-transform: translateY(2px) rotate(2.6821deg);
-            transform: translateY(2px) rotate(2.6821deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
 @keyframes y-axis-fish {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   50% {
-    -webkit-transform: translateY(2px) rotate(2.6821deg);
-            transform: translateY(2px) rotate(2.6821deg);
+    transform: translateY(2px) rotate(2.5612338902deg);
   }
   100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
-
-@-webkit-keyframes alone-fish {
-  0% {
-    left: -20%;
-    top: 0px;
-    -webkit-transform: rotate(7deg);
-            transform: rotate(7deg);
-  }
-  70% {
-    top: 400px;
-    left: 110%;
-    -webkit-transform: rotate(17deg);
-            transform: rotate(17deg);
-  }
-  100% {
-    top: 200px;
-    left: 110%;
-  }
-}
-
 @keyframes alone-fish {
   0% {
     left: -20%;
     top: 0px;
-    -webkit-transform: rotate(7deg);
-            transform: rotate(7deg);
+    transform: rotate(7deg);
   }
   70% {
     top: 400px;
     left: 110%;
-    -webkit-transform: rotate(17deg);
-            transform: rotate(17deg);
+    transform: rotate(17deg);
   }
   100% {
     top: 200px;
     left: 110%;
   }
 }
-
-@-webkit-keyframes alone-fish-tablet {
-  0% {
-    left: -40%;
-    top: 0px;
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-  70% {
-    top: 400px;
-    left: 110%;
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
-  }
-  100% {
-    top: 200px;
-    left: 110%;
-  }
-}
-
 @keyframes alone-fish-tablet {
   0% {
     left: -40%;
     top: 0px;
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
+    transform: rotate(10deg);
   }
   70% {
     top: 400px;
     left: 110%;
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
+    transform: rotate(20deg);
   }
   100% {
     top: 200px;
     left: 110%;
   }
 }
-
-@-webkit-keyframes alone-fish-mobile {
-  0% {
-    left: -40%;
-    top: 0px;
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
-  }
-  70% {
-    top: 400px;
-    left: 110%;
-    -webkit-transform: rotate(30deg);
-            transform: rotate(30deg);
-  }
-  100% {
-    top: 200px;
-    left: 110%;
-  }
-}
-
 @keyframes alone-fish-mobile {
   0% {
     left: -40%;
     top: 0px;
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
+    transform: rotate(20deg);
   }
   70% {
     top: 400px;
     left: 110%;
-    -webkit-transform: rotate(30deg);
-            transform: rotate(30deg);
+    transform: rotate(30deg);
   }
   100% {
     top: 200px;
     left: 110%;
   }
 }
-
-@-webkit-keyframes y-axis-alone-fish {
-  50% {
-    -webkit-transform: translateY(6px);
-            transform: translateY(6px);
-  }
-}
-
 @keyframes y-axis-alone-fish {
   50% {
-    -webkit-transform: translateY(6px);
-            transform: translateY(6px);
+    transform: translateY(6px);
   }
 }
-
 /* * {
   background: #000 !important;
   color: #0f0 !important;
@@ -530,13 +225,11 @@ body {
   height: 980px;
   width: 100%;
 }
-
 @media all and (max-width: 767px) {
   #particles-js {
     height: 1080px;
   }
 }
-
 @media all and (max-width: 576px) {
   #particles-js {
     height: 120vh;
@@ -550,21 +243,18 @@ body {
   height: 2160px;
   width: 100%;
 }
-
 @media all and (max-width: 767px) {
   #particles-js2 {
     padding-top: 200px;
     height: 2660px;
   }
 }
-
 @media all and (max-width: 576px) {
   #particles-js2 {
     padding-top: 150px;
     height: 2260px;
   }
 }
-
 @media all and (max-width: 400px) {
   #particles-js2 {
     height: 2160px;
@@ -577,12 +267,10 @@ body {
 }
 
 .slideIn-transition {
-  -webkit-animation: slideInTop 0.8s ease-in-out forwards;
-          animation: slideInTop 0.8s ease-in-out forwards;
+  animation: slideInTop 0.8s ease-in-out forwards;
 }
 
 .background {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0.2))), url(/Pictures/Background.jpg) no-repeat center;
   background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url(/Pictures/Background.jpg) no-repeat center;
   min-height: 4320px;
   background-size: cover;
@@ -592,57 +280,40 @@ body {
   } */
   /* Change the white to any color */
 }
-
 .background header {
   min-height: 1080px;
   overflow-x: hidden;
 }
-
 .background header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   padding-right: 40px;
 }
-
 @media all and (max-width: 767px) {
   .background header ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
-
 @media all and (max-width: 576px) {
   .background header ul {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     padding-right: 0;
   }
 }
-
 @media all and (max-width: 400px) {
   .background header ul {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 }
-
 .background header ul li {
   position: relative;
 }
-
 .background header ul li a {
   color: white;
   font-size: 1.7em;
   margin: 0 15px;
   padding-top: 30px;
 }
-
 @media all and (max-width: 576px) {
   .background header ul li a {
     margin: 0;
@@ -650,21 +321,17 @@ body {
     font-size: 1.4em;
   }
 }
-
 @media all and (max-width: 400px) {
   .background header ul li a {
     font-size: 1.3em;
   }
 }
-
 .background header ul li a:hover {
   color: #46e7c5;
 }
-
 .background header ul li a:focus {
   color: #46e7c5;
 }
-
 .background header .RedPlanet {
   position: absolute;
   width: 60px;
@@ -672,187 +339,143 @@ body {
   left: 200px;
   z-index: 2;
   cursor: crosshair;
-  -webkit-animation: float-red 5s ease-in-out infinite;
-          animation: float-red 5s ease-in-out infinite;
-  -webkit-filter: drop-shadow(0 0 15px crimson) brightness(1);
-          filter: drop-shadow(0 0 15px crimson) brightness(1);
+  animation: float-red 5s ease-in-out infinite;
+  filter: drop-shadow(0 0 15px crimson) brightness(1);
 }
-
 .background header .RedPlanet:hover {
-  -webkit-animation: EXPLOSION-RED 3s linear forwards;
-          animation: EXPLOSION-RED 3s linear forwards;
+  animation: EXPLOSION-RED 3s linear forwards;
 }
-
 @media all and (max-width: 1200px) {
   .background header .RedPlanet {
     top: 750px;
   }
 }
-
 @media all and (max-width: 576px) {
   .background header .RedPlanet {
     left: 100px;
     top: 650px;
   }
 }
-
 @media all and (max-width: 400px) {
   .background header .RedPlanet {
     left: 100px;
     top: 700px;
   }
 }
-
 @media all and (max-width: 350px) {
   .background header .RedPlanet {
     right: 100px;
     top: 730px;
   }
 }
-
 .background header .BluePlanet {
   position: absolute;
   width: 40px;
   top: 200px;
   right: 250px;
   cursor: crosshair;
-  -webkit-animation: float-blue 5s ease-in-out 0.5s infinite;
-          animation: float-blue 5s ease-in-out 0.5s infinite;
-  -webkit-filter: drop-shadow(0 0 15px #0084ff) brightness(1);
-          filter: drop-shadow(0 0 15px #0084ff) brightness(1);
+  animation: float-blue 5s ease-in-out 0.5s infinite;
+  filter: drop-shadow(0 0 15px rgb(0, 132, 255)) brightness(1);
 }
-
 .background header .BluePlanet:hover {
-  -webkit-animation: EXPLOSION-BLUE 3s linear forwards;
-          animation: EXPLOSION-BLUE 3s linear forwards;
+  animation: EXPLOSION-BLUE 3s linear forwards;
 }
-
 @media all and (max-width: 767px) {
   .background header .BluePlanet {
     top: 150px;
   }
 }
-
 @media all and (max-width: 576px) {
   .background header .BluePlanet {
     right: 100px;
     top: 100px;
   }
 }
-
 .background header h1 {
   font-size: 5em;
   max-width: 900px;
   line-height: 1.6em;
   margin: 250px auto 0;
-  -webkit-animation: Title 1.5s ease-in forwards;
-          animation: Title 1.5s ease-in forwards;
+  animation: Title 1.5s ease-in forwards;
 }
-
 @media all and (max-width: 1200px) {
   .background header h1 {
     font-size: 4.7em;
   }
 }
-
 @media all and (max-width: 767px) {
   .background header h1 {
     font-size: 5em;
   }
 }
-
 @media all and (max-width: 576px) {
   .background header h1 {
     margin-top: 150px;
     font-size: 3.8em;
   }
 }
-
 .background header h1 span {
   background: linear-gradient(45deg, #ff0062, #eb40bd, #00e1ff, #46e7c5);
   background-size: 400% 400%;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-animation: gradient 10s ease infinite;
-          animation: gradient 10s ease infinite;
+  animation: gradient 10s ease infinite;
 }
-
 .background header .wrapperSpace {
-  -webkit-animation: y-axis 3s ease-in-out infinite;
-          animation: y-axis 3s ease-in-out infinite;
+  animation: y-axis 3s ease-in-out infinite;
   z-index: 1;
 }
-
 .background header .wrapperSpace .SpaceUfo {
   width: 80px;
   margin-top: -180px;
   position: relative;
   left: -30%;
-  -webkit-animation: x-axis 50s linear 5s infinite;
-          animation: x-axis 50s linear 5s infinite;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
+  animation: x-axis 50s linear 5s infinite;
+  transform: rotate(0deg);
   transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
 }
-
 .background header .wrapperSpace .SpaceUfo:active {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: 0s;
+  transform: rotate(360deg);
   transition: 0s;
 }
-
 @media all and (max-width: 767px) {
   .background header .wrapperSpace .SpaceUfo {
-    -webkit-animation-duration: 30s;
-            animation-duration: 30s;
+    animation-duration: 30s;
     margin-top: 60px;
   }
 }
-
 @media all and (max-width: 576px) {
   .background header .wrapperSpace .SpaceUfo {
-    -webkit-animation-duration: 20s;
-            animation-duration: 20s;
+    animation-duration: 20s;
   }
 }
-
 @media all and (max-width: 350px) {
   .background header .wrapperSpace .SpaceUfo {
     left: -32%;
   }
 }
-
 .background section {
   overflow: hidden;
 }
-
 .background section .about {
   min-height: 1080px;
 }
-
 .background section .about h2 {
   font-size: 4em;
   padding-top: 50px;
 }
-
 @media all and (max-width: 767px) {
   .background section .about h2 {
     padding-top: 250px;
   }
 }
-
 @media all and (max-width: 576px) {
   .background section .about h2 {
     padding-top: 130px;
     font-size: 3em;
   }
 }
-
 .background section .about .SkyAirship {
   width: 75px;
   height: auto;
@@ -860,174 +483,129 @@ body {
   z-index: 0;
   position: relative;
   right: -110%;
-  -webkit-animation: Airship 270s linear infinite;
-          animation: Airship 270s linear infinite;
+  animation: Airship 270s linear infinite;
 }
-
 @media all and (max-width: 1200px) {
   .background section .about .SkyAirship {
-    -webkit-animation-duration: 200s;
-            animation-duration: 200s;
+    animation-duration: 200s;
   }
 }
-
 @media all and (max-width: 767px) {
   .background section .about .SkyAirship {
-    -webkit-animation-duration: 120s;
-            animation-duration: 120s;
+    animation-duration: 120s;
   }
 }
-
 @media all and (max-width: 576px) {
   .background section .about .SkyAirship {
-    -webkit-animation-duration: 70s;
-            animation-duration: 70s;
+    animation-duration: 70s;
   }
 }
-
 .background section .about .profilPicture {
   margin-top: 50px;
   background-color: rgba(242, 242, 242, 0.3);
   border-radius: 15px;
 }
-
 @media all and (max-width: 576px) {
   .background section .about .profilPicture {
     margin-top: 40px;
   }
 }
-
 .background section .about .profilPicture p {
   font-size: 1.5em;
   color: #222;
   text-align: justify;
   font-weight: 600;
 }
-
 @media all and (max-width: 767px) {
   .background section .about .profilPicture p {
     font-size: 1.3em;
   }
 }
-
 @media all and (max-width: 576px) {
   .background section .about .profilPicture p {
     font-size: 1.2em;
     font-weight: 500;
   }
 }
-
 .background section .about .workingLearning {
   margin-top: 80px;
   background-color: rgba(242, 242, 242, 0.3);
   border-radius: 15px;
 }
-
 @media all and (max-width: 767px) {
   .background section .about .workingLearning {
     margin-top: 80px;
   }
 }
-
 @media all and (max-width: 576px) {
   .background section .about .workingLearning {
     margin-top: 20px;
   }
 }
-
 .background section .about .workingLearning h3 {
   font-size: 1.7em;
   font-weight: 600;
 }
-
 @media all and (max-width: 767px) {
   .background section .about .workingLearning h3 {
     font-size: 1.5em;
     font-weight: 500;
   }
 }
-
 .background section .about .workingLearning div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
-
 .background section .about .workingLearning div .logo-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   font-size: 3em;
   padding: 10px 10px;
   color: #222;
 }
-
 @media all and (max-width: 576px) {
   .background section .about .workingLearning div .logo-text {
     font-size: 2.5em;
   }
 }
-
 @media all and (max-width: 350px) {
   .background section .about .workingLearning div .logo-text {
     font-size: 2.2em;
   }
 }
-
 .background section .about .workingLearning div .logo-text p {
   font-size: 0.45em;
   font-weight: 400;
   padding-top: 10px;
 }
-
 .background section .about .boat {
   margin: 20px 0 50px;
   position: relative;
-  -webkit-animation: Boat 7s ease-in-out infinite;
-          animation: Boat 7s ease-in-out infinite;
+  animation: Boat 7s ease-in-out infinite;
 }
-
 @media all and (max-width: 767px) {
   .background section .about .boat {
     margin: 20px 0 100px;
   }
 }
-
 .background section .project {
   min-height: 1280px;
 }
-
 .background section .project::-webkit-scrollbar {
-  display: none;
-  /* for Chrome, Safari, and Opera */
+  display: none; /* for Chrome, Safari, and Opera */
 }
-
 .background section .project h2 {
   font-size: 4em;
   padding-top: 150px;
 }
-
 @media all and (max-width: 767px) {
   .background section .project h2 {
     padding-top: 210px;
   }
 }
-
 @media all and (max-width: 576px) {
   .background section .project h2 {
     padding-top: 200px;
@@ -1035,258 +613,175 @@ body {
     padding-bottom: 30px;
   }
 }
-
 .background section .project .fishes {
   position: relative;
 }
-
 .background section .project .fishes .group-fish {
   position: absolute;
   right: 0px;
   width: 300px;
   height: auto;
   fill: #436db0;
-  -webkit-animation: group-fish 20s linear infinite;
-          animation: group-fish 20s linear infinite;
-  -webkit-transform: rotate(-17deg);
-          transform: rotate(-17deg);
+  animation: group-fish 20s linear infinite;
+  transform: rotate(-17deg);
 }
-
 .background section .project .fishes .group-fish .cls-1:nth-child(1) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.9156s;
-          animation-delay: 0.9156s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.6754467004s;
 }
-
 .background section .project .fishes .group-fish .cls-1:nth-child(2) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.45769s;
-          animation-delay: 0.45769s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.5065753279s;
 }
-
 .background section .project .fishes .group-fish .cls-1:nth-child(3) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.23357s;
-          animation-delay: 0.23357s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.0108216333s;
 }
-
 .background section .project .fishes .group-fish .cls-1:nth-child(4) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.92568s;
-          animation-delay: 0.92568s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.3567062461s;
 }
-
 .background section .project .fishes .group-fish .cls-1:nth-child(5) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.85654s;
-          animation-delay: 0.85654s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.8947163967s;
 }
-
 .background section .project .fishes .group-fish .cls-1:nth-child(6) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.98694s;
-          animation-delay: 0.98694s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.0833240372s;
 }
-
 .background section .project .fishes .group-fish .cls-1:nth-child(7) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.69575s;
-          animation-delay: 0.69575s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.5811849086s;
 }
-
 .background section .project .fishes .group-fish .cls-1:nth-child(8) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.0417s;
-          animation-delay: 0.0417s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.7561418145s;
 }
-
 .background section .project .fishes .group-fish .cls-1:nth-child(9) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.59785s;
-          animation-delay: 0.59785s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.2880866657s;
 }
-
 .background section .project .fishes .group-fish .cls-1:nth-child(10) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.73393s;
-          animation-delay: 0.73393s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.7787479276s;
 }
-
 .background section .project .fishes .group-fish .cls-1:nth-child(11) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.98564s;
-          animation-delay: 0.98564s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.1607570992s;
 }
-
 @media all and (max-width: 767px) {
   .background section .project .fishes .group-fish {
-    -webkit-animation-duration: 14s;
-            animation-duration: 14s;
+    animation-duration: 14s;
   }
 }
-
 @media all and (max-width: 576px) {
   .background section .project .fishes .group-fish {
-    -webkit-animation-duration: 7s;
-            animation-duration: 7s;
+    animation-duration: 7s;
   }
 }
-
 .background section .project .fishes .group-fish-2 {
   position: absolute;
   top: 700px;
   width: 250px;
-  -webkit-transform: scaleX(-1) rotate(7deg);
-          transform: scaleX(-1) rotate(7deg);
-  -webkit-animation: group-fish-2 30s linear infinite;
-          animation: group-fish-2 30s linear infinite;
+  transform: scaleX(-1) rotate(7deg);
+  animation: group-fish-2 30s linear infinite;
 }
-
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(1),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(1),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(1),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(1) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.35606s;
-          animation-delay: 0.35606s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.1574581047s;
 }
-
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(2),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(2),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(2),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(2) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.66706s;
-          animation-delay: 0.66706s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.0537746569s;
 }
-
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(3),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(3),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(3),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(3) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.69551s;
-          animation-delay: 0.69551s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.9267904567s;
 }
-
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(4),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(4),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(4),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(4) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.37433s;
-          animation-delay: 0.37433s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.7807057619s;
 }
-
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(5),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(5),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(5),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(5) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.0388s;
-          animation-delay: 0.0388s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.8939783923s;
 }
-
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(6),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(6),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(6),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(6) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.26539s;
-          animation-delay: 0.26539s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.6769828274s;
 }
-
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(7),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(7),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(7),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(7) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.49553s;
-          animation-delay: 0.49553s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.538095139s;
 }
-
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(8),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(8),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(8),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(8) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.37772s;
-          animation-delay: 0.37772s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.9038398643s;
 }
-
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(9),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(9),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(9),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(9) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.79711s;
-          animation-delay: 0.79711s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.1882529843s;
 }
-
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(10),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(10),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(10),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(10) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.65721s;
-          animation-delay: 0.65721s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.7079390743s;
 }
-
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(11),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(11),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(11),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(11) {
-  -webkit-animation: y-axis-fish 2s ease-in-out infinite;
-          animation: y-axis-fish 2s ease-in-out infinite;
-  -webkit-animation-delay: 0.10223s;
-          animation-delay: 0.10223s;
+  animation: y-axis-fish 2s ease-in-out infinite;
+  animation-delay: 0.4218850282s;
 }
-
 @media all and (max-width: 767px) {
   .background section .project .fishes .group-fish-2 {
-    -webkit-animation-duration: 20s;
-            animation-duration: 20s;
+    animation-duration: 20s;
   }
 }
-
 @media all and (max-width: 576px) {
   .background section .project .fishes .group-fish-2 {
-    -webkit-animation-duration: 15s;
-            animation-duration: 15s;
+    animation-duration: 15s;
   }
 }
-
 .background section .project .containerModal .rowModal {
   margin-top: 50px;
 }
-
 @media all and (max-width: 576px) {
   .background section .project .containerModal .rowModal {
     margin-top: 20px;
+    gap: 30px;
   }
 }
-
 .background section .project .containerModal .rowModal .cardModal {
   cursor: pointer;
   height: auto;
@@ -1294,22 +789,17 @@ body {
   border: none;
   margin: 10px 10px;
   border-radius: 30px;
-  -webkit-box-shadow: 5px 5px 15px #222;
-          box-shadow: 5px 5px 15px #222;
-  -webkit-transition: opacity 0.3s ease-in-out;
+  box-shadow: 5px 5px 15px #222;
   transition: opacity 0.3s ease-in-out;
 }
-
 @media all and (max-width: 767px) {
   .background section .project .containerModal .rowModal .cardModal {
     margin: 10px auto;
   }
 }
-
 .background section .project .containerModal .rowModal .cardModal:hover {
   opacity: 0.7;
 }
-
 .background section .project .containerModal .rowModal .cardModal .imgThumb {
   -o-object-fit: contain;
      object-fit: contain;
@@ -1317,19 +807,16 @@ body {
   height: 100%;
   border-radius: 30px;
 }
-
 .background section .project .containerModal .rowModal .cardModal .imgThumbCover {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 @media all and (max-width: 767px) {
   .background section .project .containerModal .rowModal .cardModal .imgThumbCover {
     -o-object-fit: contain;
        object-fit: contain;
   }
 }
-
 .background section .project .containerModal .rowModal .cardModal .titleProject {
   position: absolute;
   color: white;
@@ -1339,27 +826,22 @@ body {
   border-radius: 30px;
   background-color: rgba(34, 34, 34, 0.9);
 }
-
 .background section .project .containerModal .modal-content {
   background: rgba(34, 34, 34, 0.97);
   border: none;
   margin-top: 50px;
 }
-
 @media all and (max-width: 767px) {
   .background section .project .containerModal .modal-content {
     margin-top: 100px;
   }
 }
-
 .background section .project .containerModal .modal-content .modal-body {
   padding: 0;
 }
-
 .background section .project .containerModal .modal-content .modal-body img {
   border-radius: 5px 5px 0 0;
 }
-
 .background section .project .containerModal .modal-content .modal-body p {
   color: white;
   font-size: 1.1em;
@@ -1367,22 +849,18 @@ body {
   width: 80%;
   margin: 0 auto;
 }
-
 @media all and (max-width: 767px) {
   .background section .project .containerModal .modal-content .modal-body p {
     width: 100%;
   }
 }
-
 .background section .project .containerModal .modal-content .modal-footer {
   border: none;
 }
-
 .background section .project .containerModal .modal-content .modal-footer button,
 .background section .project .containerModal .modal-content .modal-footer a {
   font-size: 1.1em;
 }
-
 .background section .project .containerModal .modal-content .modal-footer .close-modal {
   position: absolute;
   top: -10px;
@@ -1391,213 +869,177 @@ body {
   color: black;
   z-index: 9999;
 }
-
 .background section .project .containerModal .modal-content .modal-footer .close-modal :hover {
   color: #dc143c;
 }
-
+.background section .project .containerModal .projectButtonContainer {
+  padding-top: 20px;
+}
+.background section .project .containerModal .projectButtonContainer_button {
+  background-color: #222;
+  color: white;
+  font-size: 1.3em;
+  border: none;
+}
+.background section .project .containerModal .projectButtonContainer_button:hover {
+  background-color: rgba(70, 231, 197, 0.5);
+}
 .background footer {
   min-height: 1080px;
   overflow: hidden;
 }
-
 .background footer h2 {
   font-size: 4em;
   padding-top: 100px;
 }
-
 @media all and (max-width: 767px) {
   .background footer h2 {
     padding-top: 250px;
   }
 }
-
 @media all and (max-width: 576px) {
   .background footer h2 {
     font-size: 3em;
     padding-top: 200px;
   }
 }
-
 .background footer .wrapper-alone-fish {
-  -webkit-animation: y-axis-alone-fish 2s ease-in-out infinite;
-          animation: y-axis-alone-fish 2s ease-in-out infinite;
+  animation: y-axis-alone-fish 2s ease-in-out infinite;
 }
-
 .background footer .wrapper-alone-fish .alone-fish {
   position: relative;
   width: 100px;
   top: 50px;
-  -webkit-animation: alone-fish 25s linear infinite;
-          animation: alone-fish 25s linear infinite;
+  animation: alone-fish 25s linear infinite;
 }
-
 .background footer .wrapper-alone-fish .alone-fish path {
   fill: #56a7c4;
 }
-
 @media all and (max-width: 767px) {
   .background footer .wrapper-alone-fish .alone-fish {
-    -webkit-animation: alone-fish-tablet 20s linear infinite;
-            animation: alone-fish-tablet 20s linear infinite;
+    animation: alone-fish-tablet 20s linear infinite;
   }
 }
-
 @media all and (max-width: 576px) {
   .background footer .wrapper-alone-fish .alone-fish {
-    -webkit-animation: alone-fish-mobile 15s linear infinite;
-            animation: alone-fish-mobile 15s linear infinite;
+    animation: alone-fish-mobile 15s linear infinite;
   }
 }
-
 .background footer div form {
   max-width: 70%;
   margin: 0 auto;
 }
-
 @media all and (max-width: 767px) {
   .background footer div form {
     padding-top: 0;
   }
 }
-
 .background footer div form .inputForm {
   margin: 40px 0;
 }
-
 .background footer div form .inputForm input {
   background-color: #222;
   color: white;
   border: none;
 }
-
 .background footer div form .inputForm label {
   color: white;
 }
-
 .background footer div form .form-floatingTextArea:before {
   content: "";
   position: absolute;
-  left: 1px;
-  /* border-width (default by BS) */
-  width: calc(100% - 18px);
-  /* to show scrollbar */
+  left: 1px; /* border-width (default by BS) */
+  width: calc(100% - 18px); /* to show scrollbar */
   height: 32px;
-  border-radius: 4px;
-  /* (default by BS) */
+  border-radius: 4px; /* (default by BS) */
   background-color: #222;
 }
-
 .background footer div form .form-floatingTextArea textarea.form-control {
-  padding-top: 30px;
-  /* height of pseudo element */
-  min-height: 80px;
-  /* not relevant */
+  padding-top: 30px; /* height of pseudo element */
+  min-height: 80px; /* not relevant */
   background-color: #222;
   color: white;
   border: none;
 }
-
 .background footer div form .submit {
   position: relative;
   margin-bottom: 40px;
 }
-
 .background footer div form .submit button {
   background-color: #222;
   color: white;
   font-size: 1.3em;
 }
-
 .background footer div form .submit button:hover {
   background-color: rgba(70, 231, 197, 0.5);
 }
-
 .background footer div .contactMail {
   position: relative;
   font-size: 1.5em;
 }
-
 @media all and (max-width: 767px) {
   .background footer div .contactMail {
     font-size: 1.2em;
   }
 }
-
 @media all and (max-width: 576px) {
   .background footer div .contactMail {
     font-size: 1.3em;
   }
 }
-
 .background footer div .contactMail a {
   color: white;
-  -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
-
 .background footer div .contactMail a:hover {
   color: #46e7c5;
 }
-
 @media all and (max-width: 576px) {
   .background footer div .contactMail a {
     font-size: 1em;
   }
 }
-
 .background footer div .contactMail::first-letter {
   text-transform: capitalize;
 }
-
 .background footer div .social {
   margin-top: 30px;
 }
-
 .background footer div .social p {
   font-size: 1.5em;
 }
-
 @media all and (max-width: 767px) {
   .background footer div .social p {
     font-size: 1.2em;
   }
 }
-
 @media all and (max-width: 576px) {
   .background footer div .social p {
     font-size: 1.3em;
   }
 }
-
 .background footer div .social a {
   position: relative;
 }
-
 .background footer div .social a span {
   color: white;
   font-size: 3.5em;
   padding: 0 20px;
-  -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-
 .background footer div .social a span:hover {
   color: #222;
 }
-
 @media all and (max-width: 767px) {
   .background footer div .social a span {
     font-size: 3em;
   }
 }
-
 @media all and (max-width: 576px) {
   .background footer div .social a span {
     font-size: 3.5em;
   }
 }
-
 .background input:-webkit-autofill,
 .background input:-webkit-autofill:hover,
 .background input:-webkit-autofill:focus,
@@ -1606,5 +1048,4 @@ body {
   -webkit-text-fill-color: white !important;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

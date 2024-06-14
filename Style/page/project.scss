@@ -1,0 +1,267 @@
+@import "../utils/_variable";
+
+.bodyBackground {
+  background: linear-gradient(#4adfe3, #2c71fa);
+}
+header {
+  h1 {
+    margin-bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+    @include tablet {
+      justify-content: center;
+    }
+    @include mobile {
+      justify-content: space-between;
+      padding-right: 0;
+    }
+    @include mobileMedium {
+      flex-wrap: nowrap;
+    }
+    li {
+      position: relative;
+      .nav-link {
+        color: white;
+        font-size: 1.7em;
+        margin: 0 15px;
+        padding-top: 20px;
+        @include mobile {
+          margin: 0;
+          padding-top: 15px;
+          font-size: 1.4em;
+        }
+        @include mobileMedium {
+          font-size: 1.3em;
+        }
+        &:hover {
+          color: #222;
+        }
+        &:focus {
+          color: #222;
+        }
+      }
+    }
+  }
+}
+
+.containerModal {
+  .rowModal {
+    margin-top: 50px;
+    @include mobile {
+      margin-top: 20px;
+      gap: 30px;
+    }
+    .cardModal {
+      cursor: pointer;
+      height: auto;
+      padding: 0;
+      border: none;
+      margin: 10px 10px;
+      border-radius: 30px;
+      box-shadow: 5px 5px 15px #222;
+      transition: opacity 0.3s ease-in-out;
+      @include tablet {
+        margin: 10px auto;
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+      .imgThumb {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+      }
+      .imgThumbCover {
+        object-fit: cover;
+        @include tablet {
+          object-fit: contain;
+        }
+      }
+      .titleProject {
+        position: absolute;
+        color: white;
+        bottom: 0px;
+        left: 5px;
+        padding: 15px;
+        border-radius: 30px;
+        background-color: rgba($color: #222, $alpha: 0.9);
+      }
+    }
+  }
+  .modal-content {
+    background: rgba($color: #222, $alpha: 0.97);
+    border: none;
+    margin-top: 50px;
+    @include tablet {
+      margin-top: 100px;
+    }
+    .modal-body {
+      padding: 0;
+      img {
+        border-radius: 5px 5px 0 0;
+      }
+      p {
+        color: white;
+        font-size: 1.1em;
+        padding: 20px 5px 10px;
+        width: 80%;
+        margin: 0 auto;
+        @include tablet {
+          width: 100%;
+        }
+      }
+    }
+    .modal-footer {
+      border: none;
+      button,
+      a {
+        font-size: 1.1em;
+      }
+      .close-modal {
+        position: absolute;
+        top: -10px;
+        right: -2px;
+        font-size: 1.8em;
+        color: black;
+        z-index: 9999;
+        :hover {
+          color: #dc143c;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding-top: 50px;
+  h2 {
+    font-size: 4em;
+    padding-top: 100px;
+    @include tablet {
+      padding-top: 250px;
+    }
+    @include mobile {
+      font-size: 3em;
+      padding-top: 200px;
+    }
+  }
+  div {
+    form {
+      max-width: 70%;
+      margin: 0 auto;
+      @include tablet {
+        padding-top: 0;
+      }
+      .inputForm {
+        margin: 40px 0;
+        input {
+          background-color: #222 !important;
+          color: white !important;
+          border: none !important;
+        }
+        label {
+          color: white;
+        }
+      }
+      .form-floatingTextArea {
+        &:before {
+          content: "";
+          position: absolute;
+          left: 1px; /* border-width (default by BS) */
+          width: calc(100% - 18px); /* to show scrollbar */
+          height: 30px;
+          border-radius: 4px; /* (default by BS) */
+          background-color: #222;
+        }
+        textarea.form-control {
+          padding-top: 30px; /* height of pseudo element */
+          min-height: 80px; /* not relevant */
+          background-color: #222;
+          color: white;
+          border: none;
+        }
+      }
+
+      .submit {
+        position: relative;
+        margin-bottom: 40px;
+        button {
+          background-color: #222;
+          color: white;
+          font-size: 1.3em;
+          &:hover {
+            background-color: rgba($color: $nav-color, $alpha: 0.5);
+          }
+        }
+      }
+    }
+    .contactMail {
+      position: relative;
+      font-size: 1.5em;
+      @include tablet {
+        font-size: 1.2em;
+      }
+      @include mobile {
+        font-size: 1.3em;
+      }
+      a {
+        color: white;
+        transition: color 0.2s ease-in-out;
+        &:hover {
+          color: $nav-color;
+        }
+        @include mobile {
+          font-size: 1em;
+        }
+      }
+    }
+    .contactMail::first-letter {
+      text-transform: capitalize;
+    }
+    .social {
+      margin-top: 30px;
+      p {
+        font-size: 1.5em;
+        @include tablet {
+          font-size: 1.2em;
+        }
+        @include mobile {
+          font-size: 1.3em;
+        }
+      }
+      a {
+        position: relative;
+        span {
+          color: white;
+          font-size: 3.5em;
+          padding: 0 20px;
+          transition: color 0.2s ease;
+          &:hover {
+            color: #222;
+          }
+          @include tablet {
+            font-size: 3em;
+          }
+          @include mobile {
+            font-size: 3.5em;
+          }
+        }
+      }
+    }
+  }
+  /* Change the white to any color */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #222 inset !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}

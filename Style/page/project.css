@@ -1,0 +1,515 @@
+@keyframes Title {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes slideInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes float-red {
+  50% {
+    transform: translateY(8px);
+  }
+}
+@keyframes float-blue {
+  50% {
+    transform: translateY(6px);
+  }
+}
+@keyframes EXPLOSION-RED {
+  0% {
+    filter: brightness(1);
+    transform: scale(1) translateY(4px);
+  }
+  90% {
+    filter: brightness(10);
+    transform: scale(1.2) rotate(0deg);
+  }
+  100% {
+    filter: brightness(0) blur(2px) drop-shadow(0 0 15px black);
+    transform: scale(0.7) rotate(100deg);
+  }
+}
+@keyframes EXPLOSION-BLUE {
+  0% {
+    filter: brightness(1);
+    transform: scale(1) translateY(3px);
+  }
+  90% {
+    filter: brightness(4);
+    transform: scale(1.2) rotate(0deg);
+  }
+  100% {
+    filter: brightness(0) blur(2px) drop-shadow(0 0 15px black);
+    transform: scale(0.7) rotate(100deg);
+  }
+}
+@keyframes x-axis {
+  0% {
+    left: -30%;
+    top: 0px;
+  }
+  15% {
+    left: 50%;
+  }
+  18% {
+    left: 50%;
+  }
+  28% {
+    left: 110%;
+    top: 200px;
+  }
+  100% {
+    left: 110%;
+    top: 200px;
+  }
+}
+@keyframes y-axis {
+  50% {
+    transform: translateY(70px);
+  }
+}
+@keyframes Airship {
+  0% {
+    right: -110%;
+  }
+  1% {
+    right: -102%;
+  }
+  90% {
+    right: 100%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+@keyframes Boat {
+  0% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg) translateY(4px);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+@keyframes group-fish {
+  0% {
+    right: -110%;
+    top: 0;
+  }
+  70% {
+    right: 110%;
+    top: 200px;
+  }
+  100% {
+    right: 110%;
+    top: 200px;
+  }
+}
+@keyframes group-fish-2 {
+  0% {
+    left: -100%;
+    top: 700px;
+  }
+  70% {
+    left: 110%;
+    top: 500px;
+  }
+  100% {
+    left: 110%;
+    top: 500px;
+  }
+}
+@keyframes y-axis-fish {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: translateY(2px) rotate(2.7283887582deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes alone-fish {
+  0% {
+    left: -20%;
+    top: 0px;
+    transform: rotate(7deg);
+  }
+  70% {
+    top: 400px;
+    left: 110%;
+    transform: rotate(17deg);
+  }
+  100% {
+    top: 200px;
+    left: 110%;
+  }
+}
+@keyframes alone-fish-tablet {
+  0% {
+    left: -40%;
+    top: 0px;
+    transform: rotate(10deg);
+  }
+  70% {
+    top: 400px;
+    left: 110%;
+    transform: rotate(20deg);
+  }
+  100% {
+    top: 200px;
+    left: 110%;
+  }
+}
+@keyframes alone-fish-mobile {
+  0% {
+    left: -40%;
+    top: 0px;
+    transform: rotate(20deg);
+  }
+  70% {
+    top: 400px;
+    left: 110%;
+    transform: rotate(30deg);
+  }
+  100% {
+    top: 200px;
+    left: 110%;
+  }
+}
+@keyframes y-axis-alone-fish {
+  50% {
+    transform: translateY(6px);
+  }
+}
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+.bodyBackground {
+  background: linear-gradient(#4adfe3, #2c71fa);
+}
+
+header h1 {
+  margin-bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+@media all and (max-width: 767px) {
+  header ul {
+    justify-content: center;
+  }
+}
+@media all and (max-width: 576px) {
+  header ul {
+    justify-content: space-between;
+    padding-right: 0;
+  }
+}
+@media all and (max-width: 400px) {
+  header ul {
+    flex-wrap: nowrap;
+  }
+}
+header ul li {
+  position: relative;
+}
+header ul li .nav-link {
+  color: white;
+  font-size: 1.7em;
+  margin: 0 15px;
+  padding-top: 20px;
+}
+@media all and (max-width: 576px) {
+  header ul li .nav-link {
+    margin: 0;
+    padding-top: 15px;
+    font-size: 1.4em;
+  }
+}
+@media all and (max-width: 400px) {
+  header ul li .nav-link {
+    font-size: 1.3em;
+  }
+}
+header ul li .nav-link:hover {
+  color: #222;
+}
+header ul li .nav-link:focus {
+  color: #222;
+}
+
+.containerModal .rowModal {
+  margin-top: 50px;
+}
+@media all and (max-width: 576px) {
+  .containerModal .rowModal {
+    margin-top: 20px;
+    gap: 30px;
+  }
+}
+.containerModal .rowModal .cardModal {
+  cursor: pointer;
+  height: auto;
+  padding: 0;
+  border: none;
+  margin: 10px 10px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px #222;
+  transition: opacity 0.3s ease-in-out;
+}
+@media all and (max-width: 767px) {
+  .containerModal .rowModal .cardModal {
+    margin: 10px auto;
+  }
+}
+.containerModal .rowModal .cardModal:hover {
+  opacity: 0.7;
+}
+.containerModal .rowModal .cardModal .imgThumb {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+.containerModal .rowModal .cardModal .imgThumbCover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media all and (max-width: 767px) {
+  .containerModal .rowModal .cardModal .imgThumbCover {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+.containerModal .rowModal .cardModal .titleProject {
+  position: absolute;
+  color: white;
+  bottom: 0px;
+  left: 5px;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: rgba(34, 34, 34, 0.9);
+}
+.containerModal .modal-content {
+  background: rgba(34, 34, 34, 0.97);
+  border: none;
+  margin-top: 50px;
+}
+@media all and (max-width: 767px) {
+  .containerModal .modal-content {
+    margin-top: 100px;
+  }
+}
+.containerModal .modal-content .modal-body {
+  padding: 0;
+}
+.containerModal .modal-content .modal-body img {
+  border-radius: 5px 5px 0 0;
+}
+.containerModal .modal-content .modal-body p {
+  color: white;
+  font-size: 1.1em;
+  padding: 20px 5px 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+@media all and (max-width: 767px) {
+  .containerModal .modal-content .modal-body p {
+    width: 100%;
+  }
+}
+.containerModal .modal-content .modal-footer {
+  border: none;
+}
+.containerModal .modal-content .modal-footer button,
+.containerModal .modal-content .modal-footer a {
+  font-size: 1.1em;
+}
+.containerModal .modal-content .modal-footer .close-modal {
+  position: absolute;
+  top: -10px;
+  right: -2px;
+  font-size: 1.8em;
+  color: black;
+  z-index: 9999;
+}
+.containerModal .modal-content .modal-footer .close-modal :hover {
+  color: #dc143c;
+}
+
+footer {
+  padding-top: 50px;
+  /* Change the white to any color */
+}
+footer h2 {
+  font-size: 4em;
+  padding-top: 100px;
+}
+@media all and (max-width: 767px) {
+  footer h2 {
+    padding-top: 250px;
+  }
+}
+@media all and (max-width: 576px) {
+  footer h2 {
+    font-size: 3em;
+    padding-top: 200px;
+  }
+}
+footer div form {
+  max-width: 70%;
+  margin: 0 auto;
+}
+@media all and (max-width: 767px) {
+  footer div form {
+    padding-top: 0;
+  }
+}
+footer div form .inputForm {
+  margin: 40px 0;
+}
+footer div form .inputForm input {
+  background-color: #222 !important;
+  color: white !important;
+  border: none !important;
+}
+footer div form .inputForm label {
+  color: white;
+}
+footer div form .form-floatingTextArea:before {
+  content: "";
+  position: absolute;
+  left: 1px; /* border-width (default by BS) */
+  width: calc(100% - 18px); /* to show scrollbar */
+  height: 30px;
+  border-radius: 4px; /* (default by BS) */
+  background-color: #222;
+}
+footer div form .form-floatingTextArea textarea.form-control {
+  padding-top: 30px; /* height of pseudo element */
+  min-height: 80px; /* not relevant */
+  background-color: #222;
+  color: white;
+  border: none;
+}
+footer div form .submit {
+  position: relative;
+  margin-bottom: 40px;
+}
+footer div form .submit button {
+  background-color: #222;
+  color: white;
+  font-size: 1.3em;
+}
+footer div form .submit button:hover {
+  background-color: rgba(70, 231, 197, 0.5);
+}
+footer div .contactMail {
+  position: relative;
+  font-size: 1.5em;
+}
+@media all and (max-width: 767px) {
+  footer div .contactMail {
+    font-size: 1.2em;
+  }
+}
+@media all and (max-width: 576px) {
+  footer div .contactMail {
+    font-size: 1.3em;
+  }
+}
+footer div .contactMail a {
+  color: white;
+  transition: color 0.2s ease-in-out;
+}
+footer div .contactMail a:hover {
+  color: #46e7c5;
+}
+@media all and (max-width: 576px) {
+  footer div .contactMail a {
+    font-size: 1em;
+  }
+}
+footer div .contactMail::first-letter {
+  text-transform: capitalize;
+}
+footer div .social {
+  margin-top: 30px;
+}
+footer div .social p {
+  font-size: 1.5em;
+}
+@media all and (max-width: 767px) {
+  footer div .social p {
+    font-size: 1.2em;
+  }
+}
+@media all and (max-width: 576px) {
+  footer div .social p {
+    font-size: 1.3em;
+  }
+}
+footer div .social a {
+  position: relative;
+}
+footer div .social a span {
+  color: white;
+  font-size: 3.5em;
+  padding: 0 20px;
+  transition: color 0.2s ease;
+}
+footer div .social a span:hover {
+  color: #222;
+}
+@media all and (max-width: 767px) {
+  footer div .social a span {
+    font-size: 3em;
+  }
+}
+@media all and (max-width: 576px) {
+  footer div .social a span {
+    font-size: 3.5em;
+  }
+}
+footer input:-webkit-autofill,
+footer input:-webkit-autofill:hover,
+footer input:-webkit-autofill:focus,
+footer input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #222 inset !important;
+  -webkit-text-fill-color: white !important;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}/*# sourceMappingURL=project.css.map */

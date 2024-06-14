@@ -370,6 +370,7 @@ body {
           margin-top: 50px;
           @include mobile {
             margin-top: 20px;
+            gap: 30px;
           }
           .cardModal {
             cursor: pointer;
@@ -448,6 +449,18 @@ body {
               :hover {
                 color: #dc143c;
               }
+            }
+          }
+        }
+        .projectButtonContainer {
+          padding-top: 20px;
+          &_button {
+            background-color: #222;
+            color: white;
+            font-size: 1.3em;
+            border: none;
+            &:hover {
+              background-color: rgba($color: $nav-color, $alpha: 0.5);
             }
           }
         }
