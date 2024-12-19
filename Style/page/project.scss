@@ -58,7 +58,7 @@ header {
     }
     .cardModal {
       cursor: pointer;
-      height: auto;
+      height: 450px;
       padding: 0;
       border: none;
       margin: 10px 10px;
@@ -72,16 +72,13 @@ header {
         opacity: 0.7;
       }
       .imgThumb {
-        object-fit: contain;
+        object-fit: cover;
         width: 100%;
         height: 100%;
         border-radius: 30px;
       }
       .imgThumbCover {
         object-fit: cover;
-        @include tablet {
-          object-fit: contain;
-        }
       }
       .titleProject {
         position: absolute;

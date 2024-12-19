@@ -148,7 +148,7 @@
     transform: rotate(0deg);
   }
   50% {
-    transform: translateY(2px) rotate(2.5612338902deg);
+    transform: translateY(2px) rotate(2.0758654904deg);
   }
   100% {
     transform: rotate(0deg);
@@ -627,47 +627,47 @@ body {
 }
 .background section .project .fishes .group-fish .cls-1:nth-child(1) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.6754467004s;
+  animation-delay: 0.2499678262s;
 }
 .background section .project .fishes .group-fish .cls-1:nth-child(2) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.5065753279s;
+  animation-delay: 0.0681031838s;
 }
 .background section .project .fishes .group-fish .cls-1:nth-child(3) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.0108216333s;
+  animation-delay: 0.6886924808s;
 }
 .background section .project .fishes .group-fish .cls-1:nth-child(4) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.3567062461s;
+  animation-delay: 0.972537132s;
 }
 .background section .project .fishes .group-fish .cls-1:nth-child(5) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.8947163967s;
+  animation-delay: 0.2651071601s;
 }
 .background section .project .fishes .group-fish .cls-1:nth-child(6) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.0833240372s;
+  animation-delay: 0.4758485551s;
 }
 .background section .project .fishes .group-fish .cls-1:nth-child(7) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.5811849086s;
+  animation-delay: 0.5380379352s;
 }
 .background section .project .fishes .group-fish .cls-1:nth-child(8) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.7561418145s;
+  animation-delay: 0.1319236625s;
 }
 .background section .project .fishes .group-fish .cls-1:nth-child(9) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.2880866657s;
+  animation-delay: 0.4654400305s;
 }
 .background section .project .fishes .group-fish .cls-1:nth-child(10) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.7787479276s;
+  animation-delay: 0.3741582627s;
 }
 .background section .project .fishes .group-fish .cls-1:nth-child(11) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.1607570992s;
+  animation-delay: 0.8234087929s;
 }
 @media all and (max-width: 767px) {
   .background section .project .fishes .group-fish {
@@ -691,77 +691,77 @@ body {
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(1),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(1) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.1574581047s;
+  animation-delay: 0.4875810688s;
 }
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(2),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(2),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(2),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(2) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.0537746569s;
+  animation-delay: 0.4308706817s;
 }
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(3),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(3),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(3),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(3) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.9267904567s;
+  animation-delay: 0.4596713031s;
 }
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(4),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(4),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(4),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(4) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.7807057619s;
+  animation-delay: 0.5691438329s;
 }
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(5),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(5),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(5),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(5) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.8939783923s;
+  animation-delay: 0.8567439129s;
 }
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(6),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(6),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(6),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(6) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.6769828274s;
+  animation-delay: 0.1820821822s;
 }
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(7),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(7),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(7),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(7) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.538095139s;
+  animation-delay: 0.5243855289s;
 }
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(8),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(8),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(8),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(8) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.9038398643s;
+  animation-delay: 0.5450853312s;
 }
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(9),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(9),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(9),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(9) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.1882529843s;
+  animation-delay: 0.0718843359s;
 }
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(10),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(10),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(10),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(10) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.7079390743s;
+  animation-delay: 0.9981162202s;
 }
 .background section .project .fishes .group-fish-2 .fish-1:nth-child(11),
 .background section .project .fishes .group-fish-2 .fish-2:nth-child(11),
 .background section .project .fishes .group-fish-2 .fish-3:nth-child(11),
 .background section .project .fishes .group-fish-2 .fish-4:nth-child(11) {
   animation: y-axis-fish 2s ease-in-out infinite;
-  animation-delay: 0.4218850282s;
+  animation-delay: 0.6422196641s;
 }
 @media all and (max-width: 767px) {
   .background section .project .fishes .group-fish-2 {
